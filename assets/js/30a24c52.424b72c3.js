@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[453],{8605:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/blog/tags/hello","allTagsPath":"/blog/tags","count":2}')}}]);

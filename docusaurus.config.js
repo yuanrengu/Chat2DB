@@ -101,6 +101,22 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      // 这里设置关键字 和描述 ，方便给搜索引擎收录 https://docusaurus.io/docs/seo#global-metadata
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'easyexcel 官方,easyexcel官方文档,easyexcel,easyexcel官网,easy excel,esayexcel,easyexcle,easyexcal,easyexecl,eazyexcel,easyexcel文档,easy-excel,easyexcel official,Excel,Easy Excel,Java,xls,xlsx,csv,省内存,简单,读excel,写excel,解析Excel,poi,oom,OutOfMemoryError'
+        },
+        {
+          name: 'description',
+          content: 'EasyExcel是一个基于Java的、快速、简洁、解决大文件内存溢出的Excel处理工具。他能让你在不用考虑性能、内存的等因素的情况下，快速完成Excel的读、写等功能。'
+        },
+      ],
+      // 最上面的广告位  https://docusaurus.io/docs/api/themes/configuration#announcement-bar
+      announcementBar: {
+        id: 'announcementBar-2',
+        content: '⭐ 开源不易，如果觉得本项目对您的工作还是有帮助的话， 请帮忙在<a target="_blank" rel="noopener noreferrer" href="https://github.com/alibaba/Chat2DB">GitHub</a> 点个⭐️Star',
+      },
       navbar: {
         title: 'My Site',
         logo: {

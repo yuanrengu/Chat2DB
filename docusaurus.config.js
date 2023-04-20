@@ -51,6 +51,11 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        // 设置谷歌数据分析
+        gtag: {
+          trackingID: 'G-HLJ1ZEFTZM',
+          anonymizeIP: true,
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

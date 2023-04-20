@@ -74,7 +74,7 @@ const config = {
               tagName: 'meta',
               attributes: {
                 name: 'aes-config',
-                content: 'pid=xux-opensource&user_type=101&uid=&username=&dim10=Chat2DB',
+                content: 'pid=xux-opensource&user_type=101&uid=&username=&dim10=chat2db',
               },
             },
           ],

@@ -1,36 +1,251 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const code_themes = {
+  light: require('prism-react-renderer/themes/github'),
+  dark: require('prism-react-renderer/themes/vsDark'),
+};
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Chat2DB',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+const meta = {
+  title: 'Dyte Docs',
+  tagline: 'Real-time audio & video SDKs, ready to launch 🚀',
+  url: 'https://docs.dyte.io',
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  favicon: '/favicon.ico',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+};
+
+/** @type {import('@docusaurus/plugin-content-docs').Options[]} */
+const docs = [
+  {
+    id: 'cli',
+    path: 'docs/cli',
+    routeBasePath: '/cli',
+  },
+  {
+    id: 'plugin-sdk',
+    path: 'docs/plugin-sdk',
+    routeBasePath: '/plugin-sdk',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Web UI Kits
+  {
+    id: 'ui-kit',
+    path: 'docs/ui-kit',
+    routeBasePath: '/ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'react-ui-kit',
+    path: 'docs/react-ui-kit',
+    routeBasePath: '/react-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'angular-ui-kit',
+    path: 'docs/angular-ui-kit',
+    routeBasePath: '/angular-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Web Core
+  {
+    id: 'web-core',
+    path: 'docs/web-core',
+    routeBasePath: '/web-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  // React Web Core
+  {
+    id: 'react-web-core',
+    path: 'docs/react-web-core',
+    routeBasePath: '/react-web-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Mobile Core
+  {
+    id: 'android-core',
+    path: 'docs/android-core',
+    routeBasePath: '/android-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'flutter-core',
+    path: 'docs/flutter-core',
+    routeBasePath: '/flutter-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'ios-core',
+    path: 'docs/ios-core',
+    routeBasePath: '/ios-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'rn-core',
+    path: 'docs/rn-core',
+    routeBasePath: '/rn-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Mobile Prebuilt SDKs
+  {
+    id: 'android',
+    path: 'docs/android',
+    routeBasePath: '/android',
+    versions: {
+      current: {
+        label: '0.14.x',
+      },
+    },
+  },
+  {
+    id: 'flutter',
+    path: 'docs/flutter',
+    routeBasePath: '/flutter',
+    versions: {
+      current: {
+        label: '0.7.x',
+      },
+    },
+  },
+  {
+    id: 'ios',
+    path: 'docs/ios',
+    routeBasePath: '/ios',
+    versions: {
+      current: {
+        label: '1.33.x',
+      },
+    },
+  },
+  {
+    id: 'react-native',
+    path: 'docs/react-native',
+    routeBasePath: '/react-native',
+    versions: {
+      current: {
+        label: '0.25.x',
+      },
+    },
+  },
+
+  // Web SDKs - Old
+  {
+    id: 'react',
+    path: 'docs/react',
+    routeBasePath: '/react',
+    versions: {
+      current: {
+        label: '0.37.0',
+      },
+    },
+  },
+  {
+    id: 'javascript',
+    path: 'docs/javascript',
+    routeBasePath: '/javascript',
+    versions: {
+      current: {
+        label: '0.37.0',
+      },
+    },
+  },
+];
+
+/** @type {import('@docusaurus/plugin-content-docs').Options} */
+const defaultSettings = {
+  breadcrumbs: false,
+  editUrl: 'https://github.com/dyte-in/docs/tree/main/',
+  showLastUpdateTime: true,
+  remarkPlugins: [
+    [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+  ],
+  sidebarPath: require.resolve('./sidebars-default.js'),
+};
+
+/**
+ * Create a section
+ * @param {import('@docusaurus/plugin-content-docs').Options} options
+ */
+function create_doc_plugin({
+  sidebarPath = require.resolve('./sidebars-default.js'),
+  ...options
+}) {
+  return [
+    '@docusaurus/plugin-content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    ({
+      ...defaultSettings,
+      sidebarPath,
+      ...options,
+    }),
+  ];
+}
+
+const isDev = process.env.NODE_ENV === 'development';
+
+const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
+const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
+const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
+
+const plugins = [tailwindPlugin];
+
+const fs = require('fs');
+const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
+const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  ...meta,
+  plugins,
+
+  trailingSlash: false,
+  themes: ['@docusaurus/theme-live-codeblock'],
+  clientModules: [require.resolve('./src/client/define-ui-kit.js')],
 
   presets: [
     [
@@ -63,136 +278,202 @@ const config = {
     ],
   ],
 
-  plugins: [
-    // 接入开源官网的流量统计
-    [
-      'docusaurus-plugin-includes',
-      {
-        injectedHtmlTags: {
-          headTags: [
-            {
-              tagName: 'meta',
-              attributes: {
-                name: 'aes-config',
-                content: 'pid=xux-opensource&user_type=101&uid=&username=&dim10=chat2db',
-              },
-            },
-          ],
-          preBodyTags: [
-            {
-              tagName: 'script',
-              attributes: {
-                src: '//g.alicdn.com/alilog/mlog/aplus_v2.js',
-                id: 'beacon-aplus',
-                exparams: 'clog=o&aplus&sidx=aplusSidx&ckx=aplusCkx',
-                async: true
-              },
-            },
-            {
-              tagName: 'script',
-              attributes: {
-                src: '//g.alicdn.com/aes/??tracker/1.0.34/index.js,tracker-plugin-pv/2.4.5/index.js,tracker-plugin-event/1.2.5/index.js,tracker-plugin-jserror/1.0.13/index.js,tracker-plugin-api/1.1.14/index.js,tracker-plugin-perf/1.1.8/index.js,tracker-plugin-eventTiming/1.0.4/index.js',
-                async: true
-              },
-            },
-          ],
-        }
-      },
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      // 这里设置关键字 和描述 ，方便给搜索引擎收录 https://docusaurus.io/docs/seo#global-metadata
-      metadata: [
-        {
-          name: 'keywords',
-          content: 'easyexcel 官方,easyexcel官方文档,easyexcel,easyexcel官网,easy excel,esayexcel,easyexcle,easyexcal,easyexecl,eazyexcel,easyexcel文档,easy-excel,easyexcel official,Excel,Easy Excel,Java,xls,xlsx,csv,省内存,简单,读excel,写excel,解析Excel,poi,oom,OutOfMemoryError'
+      image: '/img/dyte-docs-card.png',
+      colorMode: {
+        defaultMode: 'dark',
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
         },
-        {
-          name: 'description',
-          content: 'EasyExcel是一个基于Java的、快速、简洁、解决大文件内存溢出的Excel处理工具。他能让你在不用考虑性能、内存的等因素的情况下，快速完成Excel的读、写等功能。'
-        },
-      ],
-      // 最上面的广告位  https://docusaurus.io/docs/api/themes/configuration#announcement-bar
-      announcementBar: {
-        id: 'announcementBar-2',
-        content: '⭐ 开源不易，如果觉得本项目对您的工作还是有帮助的话， 请帮忙在<a target="_blank" rel="noopener noreferrer" href="https://github.com/alibaba/Chat2DB">GitHub</a> 点个⭐️Star',
       },
       navbar: {
-        title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          href: '/',
+          src: '/logo/light.svg',
+          srcDark: '/logo/dark.svg',
+          alt: 'Dyte Docs',
+          height: '40px',
+          width: '101px',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            label: 'SDKs',
+            type: 'dropdown',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: sdksHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            label: 'Guides',
+            to: 'guides/quickstart',
+            position: 'left',
+            className: 'new-badge',
+          },
+          {
+            label: 'API Reference',
+            to: '/api/',
+          },
+          {
+            label: 'Resources',
+            type: 'dropdown',
+            className: 'dyte-dropdown resources-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: resourcesHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
+          },
+          {
+            label: 'Support',
+            to: 'https://dyte.io/contact',
+          },
+
+          {
+            type: 'search',
             position: 'right',
+          },
+          {
+            label: 'Book a demo',
+            href: 'https://dyte.io/schedule-demo',
+            position: 'right',
+            className: 'navbar-book-demo',
+          },
+          {
+            label: 'Sign Up',
+            href: 'https://dev.dyte.io/register',
+            position: 'right',
+            className: 'dev-portal-signup dev-portal-link',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        logo: {
+          href: '/',
+          src: '/logo/light.svg',
+          srcDark: '/logo/dark.svg',
+          alt: 'Dyte Docs',
+          height: '36px',
+        },
         links: [
           {
-            title: 'Docs',
+            title: 'Product',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Demo',
+                href: 'https://app.dyte.io',
+              },
+              {
+                label: 'Developer Portal',
+                href: 'https://dev.dyte.io',
+              },
+              {
+                label: 'Pricing',
+                href: 'https://dyte.io/#pricing',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Company',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'About Us',
+                href: 'https://dyte.io',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Join Us',
+                href: 'https://dyte.freshteam.com/jobs',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Privacy Policy',
+                href: 'https://dyte.io/privacy-policy',
+              },
+              {
+                label: 'Contact Us',
+                href: 'https://dyte.io/contact',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Resources',
             items: [
+              {
+                label: 'Documentation',
+                href: '/',
+              },
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://dyte.io/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/alibaba/Chat2DB',
+                label: 'Community',
+                href: 'https://community.dyte.io',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: 'Copyright © Dyte since 2020. All rights reserved.',
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: code_themes.light,
+        darkTheme: code_themes.dark,
+        additionalLanguages: [
+          'dart',
+          'ruby',
+          'groovy',
+          'kotlin',
+          'java',
+          'swift',
+          'objectivec',
+        ],
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: { start: 'highlight-start', end: 'highlight-end' },
+          },
+          {
+            className: 'code-block-error-line',
+            line: 'highlight-next-line-error',
+          },
+        ],
+      },
+      algolia: {
+        appId: 'HL0HSV62RK',
+        apiKey: '72ebf02146698733b7114c7b36da0945',
+        indexName: 'docs',
+        contextualSearch: true,
+        searchParameters: {},
       },
     }),
+
+  webpack: {
+    jsLoader: (isServer) => ({
+      loader: require.resolve('swc-loader'),
+      options: {
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+            tsx: true,
+          },
+          target: 'es2017',
+        },
+        module: {
+          type: isServer ? 'commonjs' : 'es6',
+        },
+      },
+    }),
+  },
 };
 
 module.exports = config;

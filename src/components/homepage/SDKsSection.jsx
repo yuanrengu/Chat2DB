@@ -123,23 +123,23 @@ export default function SDKsSection() {
             </p>
             <div>
               <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
-                <li>
-                  <SDKLink href="react-ui-kit" Icon={ReactIcon} label="React" />
+                {/* <li>
+                  <SDKLink href="" Icon={ReactIcon} label="React" />
                 </li>
                 <li>
                   <SDKLink
-                    href="angular-ui-kit"
+                    href=""
                     Icon={AngularIcon}
                     label="Angular"
                   />
                 </li>
                 <li>
                   <SDKLink
-                    href="ui-kit"
+                    href=""
                     Icon={HTMLIcon}
                     label="Web Components"
                   />
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -151,12 +151,12 @@ export default function SDKsSection() {
               SDKs.
             </p>
             <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
-              <li>
+              {/* <li>
                 <SDKLink href="web-core" Icon={JSIcon} label="JavaScript" />
               </li>
               <li>
                 <SDKLink href="react-web-core" Icon={ReactIcon} label="React" />
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function SDKsSection() {
               using Dyte&apos;s prebuilt design library of UI components.
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
-              <li>
+              {/* <li>
                 <SDKLink href="android" Icon={KotlinIcon} label="Android" />
               </li>
               <li>
@@ -200,7 +200,7 @@ export default function SDKsSection() {
               </li>
               <li>
                 <SDKLink href="flutter" Icon={FlutterIcon} label="Flutter" />
-              </li>
+              </li> */}
             </ul>
             {/* <div className="flex flex-1 flex-col justify-end">
               <div className="rounded-2xl bg-secondary-700 p-4 dark:bg-secondary-900">
@@ -219,7 +219,7 @@ export default function SDKsSection() {
               SDKs.
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
-              <li>
+              {/* <li>
                 <SDKLink
                   href="android-core"
                   Icon={KotlinIcon}
@@ -238,7 +238,7 @@ export default function SDKsSection() {
               </li>
               <li>
                 <SDKLink href="ios-core" Icon={SwiftIcon} label="iOS" />
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -256,9 +256,9 @@ export default function SDKsSection() {
               out-of-the-box plugins. Dive into the resources here to get
               started with building your own plugins for your applications.
             </p>
-            <Link className="text-sm" href="/plugin-sdk">
+            {/* <Link className="text-sm" href="/plugin-sdk">
               Learn More &rarr;
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-[3] items-center justify-center rounded-3xl p-6 px-8 lg:justify-end">
             <ThemedImage

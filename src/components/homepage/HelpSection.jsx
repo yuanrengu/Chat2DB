@@ -52,7 +52,7 @@ export default function HelpSection({ className = '' }) {
               Browse through our FAQs to find answers to commonly asked
               questions.
             </p>
-            <Link href="/faq" className="text-primary dark:text-primary-100">
+            <Link href="/" className="text-primary dark:text-primary-100">
               View FAQs &rarr;
             </Link>
           </div>

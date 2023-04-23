@@ -18,7 +18,8 @@ export default function ResourcesSection() {
             <Link
               className="group flex flex-col justify-between"
               key={resource.title}
-              href={resource.url}
+              // href={resource.url}
+              href={'/'}
             >
               <div>
                 <div className="mb-3 overflow-hidden rounded-lg">
@@ -53,7 +54,7 @@ export default function ResourcesSection() {
         <div className="my-20 flex flex-wrap items-center justify-center gap-3 text-center">
           <span>View all</span>
           <div className="flex gap-2">
-            <Link className="underline underline-offset-8" href="/guides/quickstart">
+            <Link className="underline underline-offset-8" href="/">
               Guides
             </Link>
             <Link

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[26681],{40912:a=>{a.exports=JSON.parse('{"label":"installation","permalink":"/rn-core/tags/installation","allTagsPath":"/rn-core/tags","count":1,"items":[{"id":"installation","title":"Installation","description":"Install web-core.","permalink":"/rn-core/"}]}')}}]);

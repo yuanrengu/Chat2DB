@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[13374],{97286:s=>{s.exports=JSON.parse('{"label":"plugins","permalink":"/ios-core/tags/plugins","allTagsPath":"/ios-core/tags","count":1,"items":[{"id":"plugins","title":"Plugins","description":"Interact with plugins in a meeting.","permalink":"/ios-core/plugins"}]}')}}]);

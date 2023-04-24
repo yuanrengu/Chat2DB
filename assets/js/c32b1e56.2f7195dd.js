@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[73920],{9291:t=>{t.exports=JSON.parse('{"label":"quickstart","permalink":"/rn-core/tags/quickstart","allTagsPath":"/rn-core/tags","count":1,"items":[{"id":"quickstart","title":"Quickstart","description":"Quickstart guide for web-core.","permalink":"/rn-core/quickstart"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[37610],{92497:i=>{i.exports=JSON.parse('{"label":"plugins","permalink":"/android-core/tags/plugins","allTagsPath":"/android-core/tags","count":1,"items":[{"id":"plugins","title":"Plugins","description":"Interact with plugins in a meeting.","permalink":"/android-core/plugins"}]}')}}]);

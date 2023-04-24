@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[64962],{92070:e=>{e.exports=JSON.parse('{"label":"recording","permalink":"/flutter-core/tags/recording","allTagsPath":"/flutter-core/tags","count":1,"items":[{"id":"recording","title":"Recording","description":"Control recordings in a meeting.","permalink":"/flutter-core/recording"}]}')}}]);

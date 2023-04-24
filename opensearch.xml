@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Dyte Docs</ShortName>
-  <Description>Search Dyte Docs</Description>
+  <ShortName>Chat2DB</ShortName>
+  <Description>Search Chat2DB</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://docs.dyte.io/favicon.ico</Image>
   <Url type="text/html" method="get" template="https://docs.dyte.io/search?q={searchTerms}"/>

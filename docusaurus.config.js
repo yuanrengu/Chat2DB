@@ -5,7 +5,7 @@ const code_themes = {
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
-  title: 'Dyte Docs',
+  title: 'Chat2DB',
   tagline: 'Real-time audio & video SDKs, ready to launch 🚀',
   url: 'https://docs.dyte.io',
   baseUrl: '/',
@@ -292,7 +292,7 @@ const config = {
           href: '/',
           src: '/logo/light.svg',
           srcDark: '/logo/dark.svg',
-          alt: 'Dyte Docs',
+          alt: 'Chat2DB',
           height: '40px',
           width: '101px',
         },
@@ -336,22 +336,10 @@ const config = {
             to: 'https://dyte.io/contact',
           },
 
-          {
-            type: 'search',
-            position: 'right',
-          },
-          {
-            label: 'Book a demo',
-            href: 'https://dyte.io/schedule-demo',
-            position: 'right',
-            className: 'navbar-book-demo',
-          },
-          {
-            label: 'Sign Up',
-            href: 'https://dev.dyte.io/register',
-            position: 'right',
-            className: 'dev-portal-signup dev-portal-link',
-          },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -419,7 +407,7 @@ const config = {
             ],
           },
         ],
-        copyright: 'Copyright © Dyte since 2020. All rights reserved.',
+        copyright: 'Copyright © Chat2DB since 2023. All rights reserved.',
       },
       prism: {
         theme: code_themes.light,
@@ -445,6 +433,7 @@ const config = {
           },
         ],
       },
+      // 搜索相关
       algolia: {
         appId: 'HL0HSV62RK',
         apiKey: '72ebf02146698733b7114c7b36da0945',

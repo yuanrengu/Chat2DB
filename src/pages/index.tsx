@@ -22,7 +22,7 @@ export default function Homepage() {
         <link rel="prefetch" href="/assets/css/elements.min.css" />
       </Head>
       <HeroSection />
-      <SDKsSection />
+      {/* <SDKsSection />
       <div className="relative">
         <APIReferenceSection />
         <div className="absolute bottom-0 top-1/2 -z-10 w-full bg-secondary-800 dark:bg-secondary-900"></div>
@@ -35,7 +35,7 @@ export default function Homepage() {
       </div>
 
       <CommunitySection />
-      <HomeFooter />
+      <HomeFooter /> */}
     </Layout>
   );
 }

@@ -35,165 +35,165 @@ const docs = [
   },
 
   // Web UI Kits
-  // {
-  //   id: 'ui-kit',
-  //   path: 'docs/ui-kit',
-  //   routeBasePath: '/ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'react-ui-kit',
-  //   path: 'docs/react-ui-kit',
-  //   routeBasePath: '/react-ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'angular-ui-kit',
-  //   path: 'docs/angular-ui-kit',
-  //   routeBasePath: '/angular-ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'ui-kit',
+    path: 'docs/ui-kit',
+    routeBasePath: '/ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'react-ui-kit',
+    path: 'docs/react-ui-kit',
+    routeBasePath: '/react-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'angular-ui-kit',
+    path: 'docs/angular-ui-kit',
+    routeBasePath: '/angular-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
 
   // Web Core
-  // {
-  //   id: 'web-core',
-  //   path: 'docs/web-core',
-  //   routeBasePath: '/web-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'web-core',
+    path: 'docs/web-core',
+    routeBasePath: '/web-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
   // React Web Core
-  // {
-  //   id: 'react-web-core',
-  //   path: 'docs/react-web-core',
-  //   routeBasePath: '/react-web-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'react-web-core',
+    path: 'docs/react-web-core',
+    routeBasePath: '/react-web-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
 
   // Mobile Core
-  // {
-  //   id: 'android-core',
-  //   path: 'docs/android-core',
-  //   routeBasePath: '/android-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'flutter-core',
-  //   path: 'docs/flutter-core',
-  //   routeBasePath: '/flutter-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'ios-core',
-  //   path: 'docs/ios-core',
-  //   routeBasePath: '/ios-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'rn-core',
-  //   path: 'docs/rn-core',
-  //   routeBasePath: '/rn-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'android-core',
+    path: 'docs/android-core',
+    routeBasePath: '/android-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'flutter-core',
+    path: 'docs/flutter-core',
+    routeBasePath: '/flutter-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'ios-core',
+    path: 'docs/ios-core',
+    routeBasePath: '/ios-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'rn-core',
+    path: 'docs/rn-core',
+    routeBasePath: '/rn-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
 
   // Mobile Prebuilt SDKs
-  // {
-  //   id: 'android',
-  //   path: 'docs/android',
-  //   routeBasePath: '/android',
-  //   versions: {
-  //     current: {
-  //       label: '0.14.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'flutter',
-  //   path: 'docs/flutter',
-  //   routeBasePath: '/flutter',
-  //   versions: {
-  //     current: {
-  //       label: '0.7.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'ios',
-  //   path: 'docs/ios',
-  //   routeBasePath: '/ios',
-  //   versions: {
-  //     current: {
-  //       label: '1.33.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'react-native',
-  //   path: 'docs/react-native',
-  //   routeBasePath: '/react-native',
-  //   versions: {
-  //     current: {
-  //       label: '0.25.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'android',
+    path: 'docs/android',
+    routeBasePath: '/android',
+    versions: {
+      current: {
+        label: '0.14.x',
+      },
+    },
+  },
+  {
+    id: 'flutter',
+    path: 'docs/flutter',
+    routeBasePath: '/flutter',
+    versions: {
+      current: {
+        label: '0.7.x',
+      },
+    },
+  },
+  {
+    id: 'ios',
+    path: 'docs/ios',
+    routeBasePath: '/ios',
+    versions: {
+      current: {
+        label: '1.33.x',
+      },
+    },
+  },
+  {
+    id: 'react-native',
+    path: 'docs/react-native',
+    routeBasePath: '/react-native',
+    versions: {
+      current: {
+        label: '0.25.x',
+      },
+    },
+  },
 
   // Web SDKs - Old
-  // {
-  //   id: 'react',
-  //   path: 'docs/react',
-  //   routeBasePath: '/react',
-  //   versions: {
-  //     current: {
-  //       label: '0.37.0',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'javascript',
-  //   path: 'docs/javascript',
-  //   routeBasePath: '/javascript',
-  //   versions: {
-  //     current: {
-  //       label: '0.37.0',
-  //     },
-  //   },
-  // },
+  {
+    id: 'react',
+    path: 'docs/react',
+    routeBasePath: '/react',
+    versions: {
+      current: {
+        label: '0.37.0',
+      },
+    },
+  },
+  {
+    id: 'javascript',
+    path: 'docs/javascript',
+    routeBasePath: '/javascript',
+    versions: {
+      current: {
+        label: '0.37.0',
+      },
+    },
+  },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -232,7 +232,7 @@ const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
 
-const plugins = [tailwindPlugin];
+const plugins = [tailwindPlugin, ...docs_plugins, webpackPlugin];
 
 const fs = require('fs');
 const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
@@ -249,30 +249,27 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'docs/guides',
+          id: 'guides',
+          routeBasePath: '/guides',
+          ...defaultSettings,
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        // 设置谷歌数据分析
-        gtag: {
-          trackingID: 'G-HLJ1ZEFTZM',
-          anonymizeIP: true,
-        },
+        blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/api-reference.css'),
+          ],
+        },
+        sitemap: {
+          ignorePatterns: ['/tags/**'],
+        },
+        googleTagManager: {
+          containerId: 'GTM-5FDFFSS',
         },
       }),
     ],
@@ -312,16 +309,16 @@ const config = {
               },
             ],
           },
-          // {
-          //   label: 'Guides',
-          //   to: 'guides/quickstart',
-          //   position: 'left',
-          //   className: 'new-badge',
-          // },
-          // {
-          //   label: 'API Reference',
-          //   to: '/api/',
-          // },
+          {
+            label: 'Guides',
+            to: 'guides/quickstart',
+            position: 'left',
+            className: 'new-badge',
+          },
+          {
+            label: 'API Reference',
+            to: '/api/',
+          },
           {
             label: 'Resources',
             type: 'dropdown',
@@ -365,63 +362,63 @@ const config = {
           alt: 'Dyte Docs',
           height: '36px',
         },
-        // links: [
-        //   {
-        //     title: 'Product',
-        //     items: [
-        //       {
-        //         label: 'Demo',
-        //         href: 'https://app.dyte.io',
-        //       },
-        //       {
-        //         label: 'Developer Portal',
-        //         href: 'https://dev.dyte.io',
-        //       },
-        //       {
-        //         label: 'Pricing',
-        //         href: 'https://dyte.io/#pricing',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Company',
-        //     items: [
-        //       {
-        //         label: 'About Us',
-        //         href: 'https://dyte.io',
-        //       },
-        //       {
-        //         label: 'Join Us',
-        //         href: 'https://dyte.freshteam.com/jobs',
-        //       },
-        //       {
-        //         label: 'Privacy Policy',
-        //         href: 'https://dyte.io/privacy-policy',
-        //       },
-        //       {
-        //         label: 'Contact Us',
-        //         href: 'https://dyte.io/contact',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Resources',
-        //     items: [
-        //       {
-        //         label: 'Documentation',
-        //         href: '/',
-        //       },
-        //       {
-        //         label: 'Blog',
-        //         href: 'https://dyte.io/blog',
-        //       },
-        //       {
-        //         label: 'Community',
-        //         href: 'https://community.dyte.io',
-        //       },
-        //     ],
-        //   },
-        // ],
+        links: [
+          {
+            title: 'Product',
+            items: [
+              {
+                label: 'Demo',
+                href: 'https://app.dyte.io',
+              },
+              {
+                label: 'Developer Portal',
+                href: 'https://dev.dyte.io',
+              },
+              {
+                label: 'Pricing',
+                href: 'https://dyte.io/#pricing',
+              },
+            ],
+          },
+          {
+            title: 'Company',
+            items: [
+              {
+                label: 'About Us',
+                href: 'https://dyte.io',
+              },
+              {
+                label: 'Join Us',
+                href: 'https://dyte.freshteam.com/jobs',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://dyte.io/privacy-policy',
+              },
+              {
+                label: 'Contact Us',
+                href: 'https://dyte.io/contact',
+              },
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'Documentation',
+                href: '/',
+              },
+              {
+                label: 'Blog',
+                href: 'https://dyte.io/blog',
+              },
+              {
+                label: 'Community',
+                href: 'https://community.dyte.io',
+              },
+            ],
+          },
+        ],
         copyright: 'Copyright © Dyte since 2020. All rights reserved.',
       },
       prism: {

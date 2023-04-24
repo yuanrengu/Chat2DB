@@ -38,7 +38,9 @@ communication features into your app using Dyte.
 
 ![PresetEditor](/static/home/create-preset.png)
 
-
+4. Create a Dyte meeting using the
+   [Create Meeting API](/api#/operations/create_meeting). This API returns a
+   unique identifier for your meeting. <br/>
 
 :::tip
 
@@ -49,6 +51,10 @@ You may want to persist the meeting ID in your database.
 ![Diagram explaining how Dyte works](/static/home/how-dyte-works-v2.png)
 _Diagram explaining how Dyte works_
 
+5. After you've created the meeting, add each participant to the meeting using
+   the [Add Participant API](/api#/operations/add_participant) (The `presetName`
+   created earlier must be passed in the body of the Add Participant API
+   request)
 
    The API response contains the user authentication token `authToken`.
 

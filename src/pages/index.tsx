@@ -35,7 +35,6 @@ export default function Homepage() {
       </div>
 
       <CommunitySection />
-
       <HomeFooter />
     </Layout>
   );

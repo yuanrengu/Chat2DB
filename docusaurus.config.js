@@ -297,19 +297,18 @@ const config = {
           width: '101px',
         },
         items: [
-          {
-            label: '首页',
-            to: '/',
-            // type: 'dropdown',
-            // className: 'dyte-dropdown',
-            // items: [
-            //   {
-            //     type: 'html',
-            //     value: sdksHTML,
-            //     className: 'dyte-dropdown',
-            //   },
-            // ],
-          },
+          // {
+          //   label: 'SDKs',
+          //   type: 'dropdown',
+          //   className: 'dyte-dropdown',
+          //   items: [
+          //     {
+          //       type: 'html',
+          //       value: sdksHTML,
+          //       className: 'dyte-dropdown',
+          //     },
+          //   ],
+          // },
           {
             label: '文档',
             to: 'guides/quickstart',

@@ -29,10 +29,10 @@ export default function Homepage() {
         <div className="absolute top-0 bottom-1/2 -z-10 w-full bg-secondary-1000"></div>
       </div>
 
-      <div className="z-0 bg-secondary-800 dark:bg-secondary-900">
-        <ResourcesSection />
-        <HelpSection className="-mb-48" />
-      </div>
+      {/*<div className="z-0 bg-secondary-800 dark:bg-secondary-900">*/}
+      {/*  <ResourcesSection />*/}
+      {/*  <HelpSection className="-mb-48" />*/}
+      {/*</div>*/}
 
       <CommunitySection />
 

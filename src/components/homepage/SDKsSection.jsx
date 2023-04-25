@@ -85,7 +85,7 @@ export default function SDKsSection() {
         <link rel="prefetch" href="/static/landing-page/plugin-sdk-dark.png" />
       </Head>
       <div className="mx-auto max-w-7xl">
-        <div className="dyte-badge">SDKs</div>
+        <div className="dyte-badge">客户端</div>
 
         <div className="sticky top-14 z-20 -mt-4 flex flex-col items-center gap-6 bg-secondary-1000 py-6 lg:flex-row lg:justify-between lg:py-0">
           <h2 className="my-0 text-center font-jakarta lg:text-3xl">
@@ -107,9 +107,9 @@ export default function SDKsSection() {
           id="windows"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Windows客户端</h3>
+            <h3 className="text-4xl font-semibold">Windows</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              下载Windows安装包，安装启动后即可使用桌面端或者本地网页端(http://127.0.0.1:10824/)使用
+              下载Windows安装包，安装启动后即可使用桌面端或者Web网页端(http://127.0.0.1:10824/)使用
             </p>
             { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
           </div>
@@ -162,9 +162,9 @@ export default function SDKsSection() {
           id="mac"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Mac客户端</h3>
+            <h3 className="text-4xl font-semibold">Mac</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              下载Mac安装包，安装包分arm版本和intel版本，安装启动后即可使用桌面端或者本地网页端(http://127.0.0.1:10824/)使用
+              下载Mac安装包，安装包分arm版本和intel版本，安装启动后即可使用桌面端或者Web网页端(http://127.0.0.1:10824/)使用
             </p>
             { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
           </div>
@@ -188,9 +188,9 @@ export default function SDKsSection() {
           id="web"
         >
           <div className="flex flex-1 flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Web客户端</h3>
+            <h3 className="text-4xl font-semibold">Web</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              下载源码包，使用JDK17，通过Maven工具编译源代码、生成jar包，启动jar包后即可通过网页端(http://127.0.0.1:10824/)使用
+              下载源码包，使用JDK17，通过Maven工具编译源代码、生成jar包，启动jar包后即可通过Web网页端(http://127.0.0.1:10824/)使用
             </p>
             { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
           </div>

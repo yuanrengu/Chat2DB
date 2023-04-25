@@ -14,24 +14,24 @@ export default function APIReferenceSection() {
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-10 rounded-2xl bg-gradient-to-r from-black to-zinc-800 px-6 py-20 text-center text-white dark:from-zinc-100 dark:to-white dark:text-black lg:flex-row lg:p-20 lg:text-left">
         <Link
           href="/api"
-          aria-label="API Reference"
+          aria-label="AI Chat SQL"
           target="_blank"
           className="absolute top-8 right-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-600/40 dark:bg-transparent"
         >
           <ArrowUpRight className="h-6 w-6 text-zinc-400 dark:text-black" />
         </Link>
         <div className="flex-1">
-          <h2 className="text-4xl">API Reference</h2>
+          <h2 className="text-4xl">AI Chat SQL</h2>
           <p className="text-zinc-400">
-            Don&apos;t worry, they are&apos;t complex. Use our
-            developer-friendly APIs and integrate video and voice communication
-            into your web, mobile, or desktop applications programmatically.
+            Chat2DB包含一系列基于ChatGPT的AI SQL使用功能，主要包括自然语言转SQL、SQL解释、SQL优化和SQL转换。
+            使用这些AI功能，可以将自然语言转换成本地查询SQL，而不仅仅是SQL查询伪代码；可以将SQL解释成自然语言，帮助用户理解复杂的SQL；
+            可以针对慢SQL提供全方位的优化建议，提升查询效率；可以转换不同数据库类型的SQL语言，降低数据库迁移难度等等。
           </p>
           <Link
-            href="/api"
+            href="/guides/quickstart"
             className="font-medium text-primary-100 dark:text-primary"
           >
-            Get started with Dyte APIs &rarr;
+            快速开始 &rarr;
           </Link>
           <ul className="mt-10 flex list-none flex-col gap-4 text-left lg:pl-0">
             <li className="flex flex-col gap-1">
@@ -39,13 +39,13 @@ export default function APIReferenceSection() {
                 href="/api/#/operations/createMeeting"
                 className="group font-jakarta font-semibold text-current"
               >
-                Create a meeting
+                自然语言转SQL
                 <span className="ml-2 opacity-0 transition group-hover:translate-x-2 group-hover:opacity-100">
                   &rarr;
                 </span>
               </Link>
               <div className="text-zinc-400">
-                Create a meeting for your organization
+                输入自然语言，输出查询SQL
               </div>
             </li>
             <li className="flex flex-col gap-1">
@@ -53,13 +53,13 @@ export default function APIReferenceSection() {
                 href="/api/#/operations/addPreset"
                 className="group font-jakarta font-semibold text-current"
               >
-                Add a preset
+                SQL解释
                 <span className="ml-2 opacity-0 transition group-hover:translate-x-2 group-hover:opacity-100">
                   &rarr;
                 </span>
               </Link>
               <div className="text-zinc-400">
-                Add a preset for the given organization ID
+                输入SQL，输出自然语言
               </div>
             </li>
             <li className="flex flex-col gap-1">
@@ -67,13 +67,27 @@ export default function APIReferenceSection() {
                 href="/api/#/operations/deleteParticipant"
                 className="group font-jakarta font-semibold text-current"
               >
-                Delete a participant
+                SQL优化
                 <span className="ml-2 opacity-0 transition group-hover:translate-x-2 group-hover:opacity-100">
                   &rarr;
                 </span>
               </Link>
               <div className="text-zinc-400">
-                Delete a particpant from the meeting
+                输入SQL，输出SQL相关的优化建议
+              </div>
+            </li>
+            <li className="flex flex-col gap-1">
+              <Link
+                  href="/api/#/operations/deleteParticipant"
+                  className="group font-jakarta font-semibold text-current"
+              >
+                SQL转换
+                <span className="ml-2 opacity-0 transition group-hover:translate-x-2 group-hover:opacity-100">
+                  &rarr;
+                </span>
+              </Link>
+              <div className="text-zinc-400">
+                输入SQL，将SQL转换为目标类型的SQL
               </div>
             </li>
           </ul>
@@ -84,7 +98,7 @@ export default function APIReferenceSection() {
               light: '/static/landing-page/api-ref-light.png',
               dark: '/static/landing-page/api-ref-dark.png',
             }}
-            alt="API Reference Preview"
+            alt="AI Chat SQL Preview"
             loading="lazy"
           />
         </div>

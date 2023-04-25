@@ -89,7 +89,7 @@ export default function SDKsSection() {
 
         <div className="sticky top-14 z-20 -mt-4 flex flex-col items-center gap-6 bg-secondary-1000 py-6 lg:flex-row lg:justify-between lg:py-0">
           <h2 className="my-0 text-center font-jakarta lg:text-3xl">
-            We support your tech stack!
+            使用方式
           </h2>
 
           <div className="mx-auto flex h-20 w-full flex-1 items-center justify-center self-start lg:w-auto lg:justify-end">
@@ -107,57 +107,52 @@ export default function SDKsSection() {
           id="web"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Web</h3>
+            <h3 className="text-4xl font-semibold">Windows</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              Interested to build using React, Angular or Web Components this
-              section covers everything you need to know for creating live video
-              and voice solutions for web applications.
+              下载Windows安装包，安装启动后即可使用桌面端或者本地网页端(http://127.0.0.1:10824/)使用
             </p>
-            {/* <Link className="text-sm">Learn More &rarr;</Link> */}
+            { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
           </div>
           <div className="flex-1 bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
             <h4>UI Kit</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Integrate video and voice calls to your app or website in minutes
-              using Dyte&apos;s prebuilt design library of UI components.
+              集成了ChatGPT开放能力，在设置中配置OPENAI_API_KEY之后，即可使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
-            <div>
-              <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
-                <li>
-                  <SDKLink href="react-ui-kit" Icon={ReactIcon} label="React" />
-                </li>
-                <li>
-                  <SDKLink
-                    href="angular-ui-kit"
-                    Icon={AngularIcon}
-                    label="Angular"
-                  />
-                </li>
-                <li>
-                  <SDKLink
-                    href="ui-kit"
-                    Icon={HTMLIcon}
-                    label="Web Components"
-                  />
-                </li>
-              </ul>
-            </div>
+            {/*<div>*/}
+            {/*  <ul className="mb-0 flex list-none flex-col gap-2 pl-0">*/}
+            {/*    <li>*/}
+            {/*      <SDKLink href="react-ui-kit" Icon={ReactIcon} label="React" />*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*      <SDKLink*/}
+            {/*        href="angular-ui-kit"*/}
+            {/*        Icon={AngularIcon}*/}
+            {/*        label="Angular"*/}
+            {/*      />*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*      <SDKLink*/}
+            {/*        href="ui-kit"*/}
+            {/*        Icon={HTMLIcon}*/}
+            {/*        label="Web Components"*/}
+            {/*      />*/}
+            {/*    </li>*/}
+            {/*  </ul>*/}
+            {/*</div>*/}
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>Core SDK</h4>
+            <h4>版本</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Build high-quality custom video and voice calls with real-time
-              communication using fully customizable and easy to integrate Core
-              SDKs.
+              获取更多版本 https://github.com/alibaba/Chat2DB/releases
             </p>
-            <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
-              <li>
-                <SDKLink href="web-core" Icon={JSIcon} label="JavaScript" />
-              </li>
-              <li>
-                <SDKLink href="react-web-core" Icon={ReactIcon} label="React" />
-              </li>
-            </ul>
+            {/*<ul className="mb-0 flex list-none flex-col gap-2 pl-0">*/}
+            {/*  <li>*/}
+            {/*    <SDKLink href="web-core" Icon={JSIcon} label="JavaScript" />*/}
+            {/*  </li>*/}
+            {/*  <li>*/}
+            {/*    <SDKLink href="react-web-core" Icon={ReactIcon} label="React" />*/}
+            {/*  </li>*/}
+            {/*</ul>*/}
           </div>
         </div>
 
@@ -167,79 +162,23 @@ export default function SDKsSection() {
           id="mobile"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Mobile</h3>
+            <h3 className="text-4xl font-semibold">Mac</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              Plan to build a video/voice solution for Android, React Native,
-              iOS, or Flutter, check the docs here to understand how Dyte can
-              help you deliver best-in-class real-time communication experience
-              for your mobile applications.
+              下载Mac安装包，安装包分arm版本和intel版本，安装启动后即可使用桌面端或者本地网页端(http://127.0.0.1:10824/)使用
             </p>
-            {/* <Link className="text-sm" href="#">
-              Learn More &rarr;
-            </Link> */}
+            { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
           </div>
           <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>Prebuilt SDK</h4>
+            <h4>UI Kit</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Integrate video and voice calls to your app or website in minutes
-              using Dyte&apos;s prebuilt design library of UI components.
+              集成了ChatGPT开放能力，在设置中配置OPENAI_API_KEY之后，即可使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
-            <ul className="flex list-none flex-col gap-2 pl-0">
-              <li>
-                <SDKLink href="android" Icon={KotlinIcon} label="Android" />
-              </li>
-              <li>
-                <SDKLink href="ios" Icon={SwiftIcon} label="iOS" />
-              </li>
-              <li>
-                <SDKLink
-                  href="react-native"
-                  Icon={ReactIcon}
-                  label="React Native"
-                />
-              </li>
-              <li>
-                <SDKLink href="flutter" Icon={FlutterIcon} label="Flutter" />
-              </li>
-            </ul>
-            {/* <div className="flex flex-1 flex-col justify-end">
-              <div className="rounded-2xl bg-secondary-700 p-4 dark:bg-secondary-900">
-                <h5 className="text-center text-xs text-text-400">
-                  COMING SOON
-                </h5>
-                <ul className="mb-0 flex list-none flex-col gap-2 pl-0"></ul>
-              </div>
-            </div> */}
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>Core SDK</h4>
+            <h4>版本</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Build high-quality custom video and voice calls with real-time
-              communication using fully customizable and easy to integrate Core
-              SDKs.
+              获取更多版本 https://github.com/alibaba/Chat2DB/releases
             </p>
-            <ul className="flex list-none flex-col gap-2 pl-0">
-              <li>
-                <SDKLink
-                  href="android-core"
-                  Icon={KotlinIcon}
-                  label="Android"
-                />
-              </li>
-              <li>
-                <SDKLink
-                  Icon={FlutterIcon}
-                  label="Flutter"
-                  href="flutter-core"
-                />
-              </li>
-              <li>
-                <SDKLink href="rn-core" Icon={ReactIcon} label="React Native" />
-              </li>
-              <li>
-                <SDKLink href="ios-core" Icon={SwiftIcon} label="iOS" />
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -249,26 +188,23 @@ export default function SDKsSection() {
           id="plugin"
         >
           <div className="flex flex-1 flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Plugin SDK</h3>
+            <h3 className="text-4xl font-semibold">源码</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              Add the most immersive, collaborative, and more human interaction
-              right in your video and voice calls using Dyte&apos;s
-              out-of-the-box plugins. Dive into the resources here to get
-              started with building your own plugins for your applications.
+              下载源码包，通过本地编译生成jar包，启动jar包后即可通过网页端(http://127.0.0.1:10824/)使用
             </p>
-            <Link className="text-sm" href="/plugin-sdk">
-              Learn More &rarr;
-            </Link>
+            { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
           </div>
-          <div className="flex flex-[3] items-center justify-center rounded-3xl p-6 px-8 lg:justify-end">
-            <ThemedImage
-              sources={{
-                light: '/static/landing-page/plugin-sdk-light.png',
-                dark: '/static/landing-page/plugin-sdk-dark.png',
-              }}
-              alt="Plugin SDK Usage Preview"
-              loading="lazy"
-            />
+          <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
+            <h4>UI Kit</h4>
+            <p className="text-sm leading-relaxed text-text-400">
+              集成了ChatGPT开放能力，在设置中配置OPENAI_API_KEY之后，即可使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
+            </p>
+          </div>
+          <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
+            <h4>版本</h4>
+            <p className="text-sm leading-relaxed text-text-400">
+              获取更多版本 https://github.com/alibaba/Chat2DB/releases
+            </p>
           </div>
         </div>
 

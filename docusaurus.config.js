@@ -298,29 +298,30 @@ const config = {
         },
         items: [
           {
-            label: 'SDKs',
-            type: 'dropdown',
-            className: 'dyte-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: sdksHTML,
-                className: 'dyte-dropdown',
-              },
-            ],
+            label: '首页',
+            to: '/',
+            // type: 'dropdown',
+            // className: 'dyte-dropdown',
+            // items: [
+            //   {
+            //     type: 'html',
+            //     value: sdksHTML,
+            //     className: 'dyte-dropdown',
+            //   },
+            // ],
           },
           {
-            label: 'Guides',
+            label: '文档',
             to: 'guides/quickstart',
             position: 'left',
             className: 'new-badge',
           },
+          // {
+          //   label: 'API Reference',
+          //   to: '/api/',
+          // },
           {
-            label: 'API Reference',
-            to: '/api/',
-          },
-          {
-            label: 'Resources',
+            label: '资料',
             type: 'dropdown',
             className: 'dyte-dropdown resources-dropdown',
             items: [
@@ -332,8 +333,8 @@ const config = {
             ],
           },
           {
-            label: 'Support',
-            to: 'https://dyte.io/contact',
+            label: 'Github',
+            to: 'https://github.com/alibaba/Chat2DB',
           },
 
           // {

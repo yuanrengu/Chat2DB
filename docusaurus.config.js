@@ -297,18 +297,18 @@ const config = {
           width: '101px',
         },
         items: [
-          // {
-          //   label: 'SDKs',
-          //   type: 'dropdown',
-          //   className: 'dyte-dropdown',
-          //   items: [
-          //     {
-          //       type: 'html',
-          //       value: sdksHTML,
-          //       className: 'dyte-dropdown',
-          //     },
-          //   ],
-          // },
+          {
+            label: '客户端',
+            type: 'dropdown',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: sdksHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
+          },
           {
             label: '文档',
             to: 'guides/quickstart',

@@ -107,7 +107,7 @@ export default function SDKsSection() {
           id="web"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Windows</h3>
+            <h3 className="text-4xl font-semibold">Windows客户端</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               下载Windows安装包，安装启动后即可使用桌面端或者本地网页端(http://127.0.0.1:10824/)使用
             </p>
@@ -162,7 +162,7 @@ export default function SDKsSection() {
           id="mobile"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Mac</h3>
+            <h3 className="text-4xl font-semibold">Mac客户端</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               下载Mac安装包，安装包分arm版本和intel版本，安装启动后即可使用桌面端或者本地网页端(http://127.0.0.1:10824/)使用
             </p>
@@ -188,7 +188,7 @@ export default function SDKsSection() {
           id="plugin"
         >
           <div className="flex flex-1 flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">源码</h3>
+            <h3 className="text-4xl font-semibold">网页客户端</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               下载源码包，通过本地编译生成jar包，启动jar包后即可通过网页端(http://127.0.0.1:10824/)使用
             </p>

@@ -346,14 +346,14 @@ const config = {
           // },
         ],
       },
-      footer: {
-        logo: {
-          href: '/',
-          src: '/logo/logo.light.svg',
-          srcDark: '/logo/logo.dark.svg',
-          alt: 'Chat2DB',
-          height: '36px',
-        },
+      // footer: {
+      //   logo: {
+      //     href: '/',
+      //     src: '/logo/logo.light.svg',
+      //     srcDark: '/logo/logo.dark.svg',
+      //     alt: 'Chat2DB',
+      //     height: '36px',
+      //   },
         // links: [
         //   {
         //     title: 'Product',
@@ -411,8 +411,8 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: 'Copyright © Chat2DB since 2023. All rights reserved.',
-      },
+      //   copyright: 'Copyright © Chat2DB since 2023. All rights reserved.',
+      // },
       prism: {
         theme: code_themes.light,
         darkTheme: code_themes.dark,

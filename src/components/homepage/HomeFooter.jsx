@@ -15,14 +15,15 @@ export default function HomeFooter({ className }) {
           className
         )}
       >
-        <div>
+        <div className='flex items-center'>
           <ThemedImage
-            sources={{ light: '/logo/light.svg', dark: '/logo/dark.svg' }}
+            sources={{ light: '/logo/logo.ico', dark: '/logo/logo.ico' }}
             alt="Logo"
             className="h-10"
           />
+          <div className='ml-2 text-lg font-bold'>Chat2DB</div>
         </div>
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           <Link href="https://community.dyte.io" aria-label="Discord community">
             <DiscordIcon className="h-7 w-7 text-zinc-400 hover:text-primary" />
           </Link>
@@ -35,7 +36,7 @@ export default function HomeFooter({ className }) {
           >
             <Linkedin className="h-6 w-6 text-zinc-400 hover:text-primary" />
           </Link>
-        </div>
+        </div> */}
         <div className="flex-1 text-zinc-400 lg:text-right">
           Copyright &copy; Chat2DB since 2023. All rights reserved.
         </div>

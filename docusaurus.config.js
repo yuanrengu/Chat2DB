@@ -290,25 +290,25 @@ const config = {
       navbar: {
         logo: {
           href: '/',
-          src: '/logo/light.svg',
-          srcDark: '/logo/dark.svg',
+          src: '/logo/logo.ico',
+          srcDark: '/logo/logo.ico',
           alt: 'Chat2DB',
-          height: '40px',
-          width: '101px',
+          height: '32px',
+          width: '32px',
         },
         items: [
-          {
-            label: '客户端',
-            type: 'dropdown',
-            className: 'dyte-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: sdksHTML,
-                className: 'dyte-dropdown',
-              },
-            ],
-          },
+          // {
+          //   label: '客户端',
+          //   type: 'dropdown',
+          //   className: 'dyte-dropdown',
+          //   items: [
+          //     {
+          //       type: 'html',
+          //       value: sdksHTML,
+          //       className: 'dyte-dropdown',
+          //     },
+          //   ],
+          // },
           {
             label: '文档',
             to: 'guides/quickstart',
@@ -345,9 +345,9 @@ const config = {
       footer: {
         logo: {
           href: '/',
-          src: '/logo/light.svg',
-          srcDark: '/logo/dark.svg',
-          alt: 'Dyte Docs',
+          src: '/logo/logo.ico',
+          srcDark: '/logo/logo.ico',
+          alt: 'Chat2DB',
           height: '36px',
         },
         links: [

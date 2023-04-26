@@ -36,14 +36,14 @@ export default function HeroSection() {
             </Link>
           </div>
         </div>
-        <div className="mt-6 flex-1 lg:mt-0 xl:flex-none">
+        <div className="">
           <ThemedImage
             sources={{
-              light: '/static/landing-page/hero-light.png',
-              dark: '/static/landing-page/hero-dark.png',
+              light: '/logo/bot1.svg',
+              dark: '/logo/bot1.svg',
             }}
-            alt="Preview of using Dyte SDKs"
-            className="max-w-[420px] lg:max-w-[560px]"
+            alt="Chat2DB"
+            className="lg:w-[600px] lg:ml-16"
           />
         </div>
       </div>

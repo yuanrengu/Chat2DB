@@ -62,7 +62,7 @@ export default function SDKsSection() {
     return (
       <div
         className={clsx(
-          'flex-1 cursor-pointer rounded-md py-2 px-6 text-center font-jakarta text-sm font-semibold',
+          'flex-1 cursor-pointer rounded-md px-6 py-2 text-center font-jakarta text-sm font-semibold',
           visibleSection === section
             ? 'bg-primary text-white'
             : 'text-black dark:text-white'
@@ -79,7 +79,7 @@ export default function SDKsSection() {
   }
 
   return (
-    <section className="bg-secondary-1000 py-20 px-4" id="start-building">
+    <section className="bg-secondary-1000 px-4 py-20" id="start-building">
       <Head>
         <link rel="prefetch" href="/static/landing-page/plugin-sdk-light.png" />
         <link rel="prefetch" href="/static/landing-page/plugin-sdk-dark.png" />
@@ -94,13 +94,45 @@ export default function SDKsSection() {
 
           <div className="mx-auto flex h-20 w-full flex-1 items-center justify-center self-start lg:w-auto lg:justify-end">
             <div className="inline-flex items-center rounded-lg bg-zinc-100 p-2 text-sm dark:bg-zinc-800 lg:text-base">
-              <Pill section="windows" />
               <Pill section="mac" />
+              <Pill section="windows" />
               <Pill section="web" />
             </div>
           </div>
         </div>
-
+        <div
+          className="sdk-section mb-16 flex flex-col rounded-3xl bg-secondary-900 lg:flex-row"
+          data-section="mac"
+          id="mac"
+        >
+          <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
+            <h3 className="text-4xl font-semibold">Mac</h3>
+            <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
+              下载Mac安装包，安装包分arm版本和intel版本，安装启动后即可使用桌面端或者Web网页端(http://127.0.0.1:10824/)使用
+            </p>
+            {
+              <Link
+                className="text-sm"
+                href={'https://github.com/alibaba/Chat2DB/releases'}
+              >
+                前往下载 &rarr;
+              </Link>
+            }
+          </div>
+          <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
+            <h4>说明</h4>
+            <p className="text-sm leading-relaxed text-text-400">
+              连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
+            </p>
+          </div>
+          <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
+            <h4>特点</h4>
+            <p className="text-sm leading-relaxed text-text-400">
+              集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
+            </p>
+          </div>
+        </div>
+        
         <div
           className="sdk-section my-16 flex flex-col rounded-3xl bg-secondary-900 lg:flex-row"
           data-section="windows"
@@ -111,10 +143,17 @@ export default function SDKsSection() {
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               下载Windows安装包，安装启动后即可使用桌面端或者Web网页端(http://127.0.0.1:10824/)使用
             </p>
-            { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
+            {
+              <Link
+                className="text-sm"
+                href={'https://github.com/alibaba/Chat2DB/releases'}
+              >
+                前往下载 &rarr;
+              </Link>
+            }
           </div>
           <div className="flex-1 bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>UI Kit</h4>
+            <h4>说明</h4>
             <p className="text-sm leading-relaxed text-text-400">
               连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
@@ -141,7 +180,7 @@ export default function SDKsSection() {
             {/*</div>*/}
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>Requirements</h4>
+            <h4>特点</h4>
             <p className="text-sm leading-relaxed text-text-400">
               集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
             </p>
@@ -158,50 +197,31 @@ export default function SDKsSection() {
 
         <div
           className="sdk-section mb-16 flex flex-col rounded-3xl bg-secondary-900 lg:flex-row"
-          data-section="mac"
-          id="mac"
-        >
-          <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Mac</h3>
-            <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
-              下载Mac安装包，安装包分arm版本和intel版本，安装启动后即可使用桌面端或者Web网页端(http://127.0.0.1:10824/)使用
-            </p>
-            { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
-          </div>
-          <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>UI Kit</h4>
-            <p className="text-sm leading-relaxed text-text-400">
-              连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
-            </p>
-          </div>
-          <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>Requirements</h4>
-            <p className="text-sm leading-relaxed text-text-400">
-              集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
-            </p>
-          </div>
-        </div>
-
-        <div
-          className="sdk-section mb-16 flex flex-col rounded-3xl bg-secondary-900 lg:flex-row"
           data-section="web"
           id="web"
         >
-          <div className="flex flex-1 flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
+          <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
             <h3 className="text-4xl font-semibold">Web</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               下载源码包，使用JDK17，通过Maven工具编译源代码、生成jar包，启动jar包后即可通过Web网页端(http://127.0.0.1:10824/)使用
             </p>
-            { <Link className="text-sm" href={"https://github.com/alibaba/Chat2DB/releases"}>前往下载 &rarr;</Link> }
+            {
+              <Link
+                className="text-sm"
+                href={'https://github.com/alibaba/Chat2DB/releases'}
+              >
+                前往下载 &rarr;
+              </Link>
+            }
           </div>
           <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>UI Kit</h4>
+            <h4>说明</h4>
             <p className="text-sm leading-relaxed text-text-400">
               连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>Requirements</h4>
+            <h4>特点</h4>
             <p className="text-sm leading-relaxed text-text-400">
               集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
             </p>
@@ -244,7 +264,7 @@ export default function SDKsSection() {
             </ul>
           </div>
           <div className="flex-1 p-6 px-8">
-            <h4>UI Kit</h4>
+            <h4>说明</h4>
             <p className="text-sm leading-relaxed text-text-400">
               Integrate video and voice calls to your app or website in minutes
               using Dyte&apos;s prebuilt design library of UI components.
@@ -264,12 +284,12 @@ export default function SDKsSection() {
           </div>
         </div> */}
       </div>
-      <div className="text-center text-text-400">
+      {/* <div className="text-center text-text-400">
         <p>
           Don&apos;t see your tech stack here?{' '}
           <Link href="https://dyte.io/contact">Contact Us</Link>
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -13,7 +13,7 @@ export default function APIReferenceSection() {
       </Head>
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-10 rounded-2xl bg-gradient-to-r from-black to-zinc-800 px-6 py-20 text-center text-white dark:from-zinc-100 dark:to-white dark:text-black lg:flex-row lg:p-20 lg:text-left">
         <Link
-          href="/guides/quickstart"
+          href="/guides/quickstart.html"
           aria-label="AI Chat SQL"
           className="absolute right-8 top-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-600/40 dark:bg-transparent"
         >
@@ -28,7 +28,7 @@ export default function APIReferenceSection() {
             可以针对慢SQL提供全方位的优化建议，提升查询效率；可以转换不同数据库类型的SQL语言，降低数据库迁移难度等等。
           </p>
           <Link
-            href="/guides/quickstart"
+            href="/guides/quickstart.html"
             className="font-medium text-primary-100 dark:text-primary"
           >
             快速开始 &rarr;

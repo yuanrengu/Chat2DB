@@ -354,63 +354,63 @@ const config = {
           alt: 'Chat2DB',
           height: '36px',
         },
-        links: [
-          {
-            title: 'Product',
-            items: [
-              {
-                label: 'Demo',
-                href: 'https://app.dyte.io',
-              },
-              {
-                label: 'Developer Portal',
-                href: 'https://dev.dyte.io',
-              },
-              {
-                label: 'Pricing',
-                href: 'https://dyte.io/#pricing',
-              },
-            ],
-          },
-          {
-            title: 'Company',
-            items: [
-              {
-                label: 'About Us',
-                href: 'https://dyte.io',
-              },
-              {
-                label: 'Join Us',
-                href: 'https://dyte.freshteam.com/jobs',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://dyte.io/privacy-policy',
-              },
-              {
-                label: 'Contact Us',
-                href: 'https://dyte.io/contact',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'Documentation',
-                href: '/',
-              },
-              {
-                label: 'Blog',
-                href: 'https://dyte.io/blog',
-              },
-              {
-                label: 'Community',
-                href: 'https://community.dyte.io',
-              },
-            ],
-          },
-        ],
+        // links: [
+        //   {
+        //     title: 'Product',
+        //     items: [
+        //       {
+        //         label: 'Demo',
+        //         href: 'https://app.dyte.io',
+        //       },
+        //       {
+        //         label: 'Developer Portal',
+        //         href: 'https://dev.dyte.io',
+        //       },
+        //       {
+        //         label: 'Pricing',
+        //         href: 'https://dyte.io/#pricing',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'Company',
+        //     items: [
+        //       {
+        //         label: 'About Us',
+        //         href: 'https://dyte.io',
+        //       },
+        //       {
+        //         label: 'Join Us',
+        //         href: 'https://dyte.freshteam.com/jobs',
+        //       },
+        //       {
+        //         label: 'Privacy Policy',
+        //         href: 'https://dyte.io/privacy-policy',
+        //       },
+        //       {
+        //         label: 'Contact Us',
+        //         href: 'https://dyte.io/contact',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'Resources',
+        //     items: [
+        //       {
+        //         label: 'Documentation',
+        //         href: '/',
+        //       },
+        //       {
+        //         label: 'Blog',
+        //         href: 'https://dyte.io/blog',
+        //       },
+        //       {
+        //         label: 'Community',
+        //         href: 'https://community.dyte.io',
+        //       },
+        //     ],
+        //   },
+        // ],
         copyright: 'Copyright © Chat2DB since 2023. All rights reserved.',
       },
       prism: {

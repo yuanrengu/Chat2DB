@@ -120,13 +120,13 @@ export default function SDKsSection() {
             }
           </div>
           <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>说明</h4>
+            <h4>特点</h4>
             <p className="text-sm leading-relaxed text-text-400">
               连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>特点</h4>
+            <h4>要求</h4>
             <p className="text-sm leading-relaxed text-text-400">
               集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
             </p>
@@ -153,7 +153,7 @@ export default function SDKsSection() {
             }
           </div>
           <div className="flex-1 bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>说明</h4>
+            <h4>特点</h4>
             <p className="text-sm leading-relaxed text-text-400">
               连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
@@ -180,7 +180,7 @@ export default function SDKsSection() {
             {/*</div>*/}
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>特点</h4>
+            <h4>要求</h4>
             <p className="text-sm leading-relaxed text-text-400">
               集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
             </p>
@@ -215,13 +215,13 @@ export default function SDKsSection() {
             }
           </div>
           <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>说明</h4>
+            <h4>特点</h4>
             <p className="text-sm leading-relaxed text-text-400">
               连接数据库之后新建查询Console，除执行基本DML或者DDL之外，可以轻松使用自然语言转SQL，SQL解释，SQL优化，SQL转换等能力
             </p>
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
-            <h4>特点</h4>
+            <h4>要求</h4>
             <p className="text-sm leading-relaxed text-text-400">
               集成了ChatGPT开放能力，需要在设置中配置OPENAI_API_KEY
             </p>
@@ -264,7 +264,7 @@ export default function SDKsSection() {
             </ul>
           </div>
           <div className="flex-1 p-6 px-8">
-            <h4>说明</h4>
+            <h4>特点</h4>
             <p className="text-sm leading-relaxed text-text-400">
               Integrate video and voice calls to your app or website in minutes
               using Dyte&apos;s prebuilt design library of UI components.

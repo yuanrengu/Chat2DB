@@ -30,11 +30,11 @@ const changeTypes = [
 export default function ReleaseNotesGenerator({ noteKey }) {
   const [releaseNotes, setReleaseNotes] = useState([]);
 
-  useEffect(() => {
-    fetch(`/release-notes/${noteKey}.json`)
-      .then((response) => response.json())
-      .then((result) => setReleaseNotes(result));
-  }, [noteKey]);
+  // useEffect(() => {
+  //   fetch(`/release-notes/${noteKey}.json`)
+  //     .then((response) => response.json())
+  //     .then((result) => setReleaseNotes(result));
+  // }, [noteKey]);
 
   return (
     <div className="notesContainer">

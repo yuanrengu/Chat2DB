@@ -80,14 +80,14 @@ export default function Home() {
           REST API {currentVersion}
         </h1>
         <div className="aside">
-          {currentVersion === 'v2' && (
+          {/* {currentVersion === 'v2' && (
             <Link
               href="/release-notes/rest-api"
               className="no-underline-links new-badge text-xs"
             >
               Release Notes
             </Link>
-          )}
+          )} */}
           {size === 'lg' && <RunInPostmanButton />}
           <SectionsMenu
             defaultValue={currentVersion}

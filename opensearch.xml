@@ -4,8 +4,8 @@
   <ShortName>Chat2DB</ShortName>
   <Description>Search Chat2DB</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://docs.dyte.io/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://docs.dyte.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.dyte.io/opensearch.xml" />
-  <moz:SearchForm>https://docs.dyte.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://chat2db.cn/logo/logo.</Image>
+  <Url type="text/html" method="get" template="https://chat2db.cn/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://chat2db.cn/opensearch.xml" />
+  <moz:SearchForm>https://chat2db.cn/</moz:SearchForm>
 </OpenSearchDescription>

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[29670],{60238:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"web-core"}')}}]);

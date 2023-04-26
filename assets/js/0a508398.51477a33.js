@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[58172],{33931:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"react-ui-kit"}')}}]);

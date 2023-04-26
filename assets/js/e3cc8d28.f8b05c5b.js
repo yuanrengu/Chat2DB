@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[66295],{63415:o=>{o.exports=JSON.parse('{"label":"votes","permalink":"/ios-core/tags/votes","allTagsPath":"/ios-core/tags","count":1,"items":[{"id":"polls/voting-on-a-poll","title":"Voting on a poll","description":"Voting on polls in a meeting.","permalink":"/ios-core/polls/voting-on-a-poll"}]}')}}]);

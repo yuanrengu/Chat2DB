@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[75794],{60574:o=>{o.exports=JSON.parse('{"label":"votes","permalink":"/rn-core/tags/votes","allTagsPath":"/rn-core/tags","count":1,"items":[{"id":"polls/voting-on-a-poll","title":"Voting on a poll","description":"Voting on polls in a meeting.","permalink":"/rn-core/polls/voting-on-a-poll"}]}')}}]);

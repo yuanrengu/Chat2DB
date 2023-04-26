@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[78427],{12679:e=>{e.exports=JSON.parse('{"label":"create","permalink":"/web-core/tags/create","allTagsPath":"/web-core/tags","count":1,"items":[{"id":"polls/creating-a-poll","title":"Creating a poll","description":"Create polls in a meeting.","permalink":"/web-core/polls/creating-a-poll"}]}')}}]);

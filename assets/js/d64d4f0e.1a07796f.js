@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[17098],{49330:e=>{e.exports=JSON.parse('[{"label":"releasenotes","permalink":"/react-ui-kit/tags/releasenotes","count":1}]')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[31699],{8526:e=>{e.exports=JSON.parse('{"label":"recording","permalink":"/web-core/tags/recording","allTagsPath":"/web-core/tags","count":1,"items":[{"id":"recording","title":"Recording","description":"Control recordings in a meeting.","permalink":"/web-core/recording"}]}')}}]);

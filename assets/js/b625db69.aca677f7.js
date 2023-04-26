@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchat_2_db=self.webpackChunkchat_2_db||[]).push([[69498],{66838:a=>{a.exports=JSON.parse('{"label":"room-metadata","permalink":"/rn-core/tags/room-metadata","allTagsPath":"/rn-core/tags","count":1,"items":[{"id":"room-metadata","title":"Room Metadata","description":"All metadata pertaining to a meeting.","permalink":"/rn-core/room-metadata"}]}')}}]);

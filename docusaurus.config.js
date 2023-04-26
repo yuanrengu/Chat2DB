@@ -312,12 +312,12 @@ const config = {
           {
             label: '首页',
             to: '/',
-            position: 'left',
-            className: 'new-badge',
           },
           {
             label: '文档',
             to: 'guides/quickstart',
+            position: 'left',
+            className: 'new-badge',
           },
           // {
           //   label: 'API Reference',

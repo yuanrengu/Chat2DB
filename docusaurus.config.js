@@ -290,11 +290,10 @@ const config = {
       navbar: {
         logo: {
           href: '/',
-          src: '/logo/logo.ico',
-          srcDark: '/logo/logo.ico',
+          src: '/logo/logo.light.svg',
+          srcDark: '/logo/logo.dark.svg',
           alt: 'Chat2DB',
-          height: '32px',
-          width: '32px',
+          height: '28px',
         },
         items: [
           // {
@@ -345,8 +344,8 @@ const config = {
       footer: {
         logo: {
           href: '/',
-          src: '/logo/logo.ico',
-          srcDark: '/logo/logo.ico',
+          src: '/logo/logo.light.svg',
+          srcDark: '/logo/logo.dark.svg',
           alt: 'Chat2DB',
           height: '36px',
         },

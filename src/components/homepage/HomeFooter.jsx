@@ -17,11 +17,10 @@ export default function HomeFooter({ className }) {
       >
         <div className='flex items-center'>
           <ThemedImage
-            sources={{ light: '/logo/logo.ico', dark: '/logo/logo.ico' }}
+            sources={{ light: '/logo/logo.light.svg', dark: '/logo/logo.dark.svg' }}
             alt="Logo"
             className="h-10"
           />
-          <div className='ml-2 text-lg font-bold'>Chat2DB</div>
         </div>
         {/* <div className="flex items-center gap-3">
           <Link href="https://community.dyte.io" aria-label="Discord community">

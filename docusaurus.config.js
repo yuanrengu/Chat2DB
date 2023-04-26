@@ -293,7 +293,8 @@ const config = {
           src: '/logo/logo.light.svg',
           srcDark: '/logo/logo.dark.svg',
           alt: 'Chat2DB',
-          height: '28px',
+
+          width:'80px'
         },
         items: [
           // {

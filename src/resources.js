@@ -2,10 +2,9 @@ const RESOURCES = [
   {
     url: '/guides/v2-migration-guide',
     type: 'Guide',
-    title: 'Migrate to v2 REST API',
-    description:
-      'Excited to announce the release of our v2 REST APIs, which are faster, more idiomatic, and easier to use.',
-    image: 'https://dyte.io/blog/content/images/size/w1000/2023/02/Dyte-Blog---v2-APIs.jpg',
+    title: '什么是Chat2DB',
+    description: '什么是Chat2DB',
+    image: 'https://img.alicdn.com/imgextra/i2/O1CN01A980Zn1qwzM1rp5YD_!!6000000005561-0-tps-1840-812.jpg',
     duration: '3 min',
   },
   {

@@ -312,6 +312,7 @@ const config = {
           {
             label: '首页',
             href: '/',
+            active: true,
           },
           {
             label: '文档',

@@ -316,7 +316,6 @@ const config = {
           {
             label: '文档',
             to: 'guides/quickstart',
-            type: 'html',
             position: 'left',
             className: 'new-badge',
           },

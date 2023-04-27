@@ -316,6 +316,7 @@ const config = {
           {
             label: '文档',
             to: 'guides/quickstart.html',
+            type: 'html',
             position: 'left',
             className: 'new-badge',
           },
@@ -334,6 +335,10 @@ const config = {
                 className: 'dyte-dropdown',
               },
             ],
+          },
+          {
+            label: 'Try',
+            to: 'http://test.sqlgpt.cn',
           },
           {
             label: 'Github',

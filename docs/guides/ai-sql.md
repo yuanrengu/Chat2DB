@@ -1,3 +1,7 @@
+---
+title: 'AI SQL'
+sidebar_position: 4
+---
 # AI SQL
 
 Chat2DB包含一系列基于ChatGPT的AI SQL使用功能，主要包括自然语言转SQL、SQL解释、SQL优化和SQL转换。

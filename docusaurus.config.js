@@ -87,7 +87,14 @@ const config = {
     ({
       image: '/logo/logo.light.svg',
       navbar: {
-        title: 'Chat2DB',
+        logo: {
+          href: '/',
+          src: '/logo/logo.light.svg',
+          srcDark: '/logo/logo.dark.svg',
+          alt: 'Chat2DB',
+
+          width:'80px'
+        },
         items: [
           {
             label: '首页',

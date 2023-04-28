@@ -1,3 +1,7 @@
+---
+title: '数据库管理'
+sidebar_position: 3
+---
 # 数据库管理
 
 Chat2DB支持Mysql、PostgreSQL、Oracle、SQLServer、ClickHouse、Oceanbase、H2、SQLite等等数据库管理

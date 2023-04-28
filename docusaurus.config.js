@@ -157,10 +157,10 @@ const config = {
             position: 'left',
             className: 'new-badge',
           },
-          // {
-          //   label: 'API Reference',
-          //   to: '/api/',
-          // },
+          {
+            label: 'API Reference',
+            to: '/api/',
+          },
           {
             label: '资料',
             type: 'dropdown',
@@ -181,80 +181,8 @@ const config = {
             label: 'Github',
             to: 'https://github.com/alibaba/Chat2DB',
           },
-
-          // {
-          //   type: 'search',
-          //   position: 'right',
-          // },
         ],
       },
-      // footer: {
-      //   logo: {
-      //     href: '/',
-      //     src: '/logo/logo.light.svg',
-      //     srcDark: '/logo/logo.dark.svg',
-      //     alt: 'Chat2DB',
-      //     height: '36px',
-      //   },
-      // links: [
-      //   {
-      //     title: 'Product',
-      //     items: [
-      //       {
-      //         label: 'Demo',
-      //         href: 'https://app.dyte.io',
-      //       },
-      //       {
-      //         label: 'Developer Portal',
-      //         href: 'https://dev.dyte.io',
-      //       },
-      //       {
-      //         label: 'Pricing',
-      //         href: 'https://dyte.io/#pricing',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Company',
-      //     items: [
-      //       {
-      //         label: 'About Us',
-      //         href: 'https://dyte.io',
-      //       },
-      //       {
-      //         label: 'Join Us',
-      //         href: 'https://dyte.freshteam.com/jobs',
-      //       },
-      //       {
-      //         label: 'Privacy Policy',
-      //         href: 'https://dyte.io/privacy-policy',
-      //       },
-      //       {
-      //         label: 'Contact Us',
-      //         href: 'https://dyte.io/contact',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Resources',
-      //     items: [
-      //       {
-      //         label: 'Documentation',
-      //         href: '/',
-      //       },
-      //       {
-      //         label: 'Blog',
-      //         href: 'https://dyte.io/blog',
-      //       },
-      //       {
-      //         label: 'Community',
-      //         href: 'https://community.dyte.io',
-      //       },
-      //     ],
-      //   },
-      // ],
-      //   copyright: 'Copyright © Chat2DB since 2023. All rights reserved.',
-      // },
       prism: {
         theme: code_themes.light,
         darkTheme: code_themes.dark,

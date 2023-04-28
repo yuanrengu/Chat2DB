@@ -315,7 +315,7 @@ const config = {
           },
           {
             label: '文档',
-            to: 'guides/quickstart',
+            href: 'guides/quickstart.html',
             position: 'left',
             className: 'new-badge',
           },

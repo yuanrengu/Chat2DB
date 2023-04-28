@@ -33,167 +33,6 @@ const docs = [
       },
     },
   },
-
-  // Web UI Kits
-  // {
-  //   id: 'ui-kit',
-  //   path: 'docs/ui-kit',
-  //   routeBasePath: '/ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'react-ui-kit',
-  //   path: 'docs/react-ui-kit',
-  //   routeBasePath: '/react-ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'angular-ui-kit',
-  //   path: 'docs/angular-ui-kit',
-  //   routeBasePath: '/angular-ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-
-  // Web Core
-  // {
-  //   id: 'web-core',
-  //   path: 'docs/web-core',
-  //   routeBasePath: '/web-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // React Web Core
-  // {
-  //   id: 'react-web-core',
-  //   path: 'docs/react-web-core',
-  //   routeBasePath: '/react-web-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-
-  // Mobile Core
-  // {
-  //   id: 'android-core',
-  //   path: 'docs/android-core',
-  //   routeBasePath: '/android-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'flutter-core',
-  //   path: 'docs/flutter-core',
-  //   routeBasePath: '/flutter-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'ios-core',
-  //   path: 'docs/ios-core',
-  //   routeBasePath: '/ios-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'rn-core',
-  //   path: 'docs/rn-core',
-  //   routeBasePath: '/rn-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-
-  // Mobile Prebuilt SDKs
-  // {
-  //   id: 'android',
-  //   path: 'docs/android',
-  //   routeBasePath: '/android',
-  //   versions: {
-  //     current: {
-  //       label: '0.14.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'flutter',
-  //   path: 'docs/flutter',
-  //   routeBasePath: '/flutter',
-  //   versions: {
-  //     current: {
-  //       label: '0.7.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'ios',
-  //   path: 'docs/ios',
-  //   routeBasePath: '/ios',
-  //   versions: {
-  //     current: {
-  //       label: '1.33.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'react-native',
-  //   path: 'docs/react-native',
-  //   routeBasePath: '/react-native',
-  //   versions: {
-  //     current: {
-  //       label: '0.25.x',
-  //     },
-  //   },
-  // },
-
-  // Web SDKs - Old
-  // {
-  //   id: 'react',
-  //   path: 'docs/react',
-  //   routeBasePath: '/react',
-  //   versions: {
-  //     current: {
-  //       label: '0.37.0',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'javascript',
-  //   path: 'docs/javascript',
-  //   routeBasePath: '/javascript',
-  //   versions: {
-  //     current: {
-  //       label: '0.37.0',
-  //     },
-  //   },
-  // },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -293,8 +132,7 @@ const config = {
           src: '/logo/logo.light.svg',
           srcDark: '/logo/logo.dark.svg',
           alt: 'Chat2DB',
-
-          width:'80px'
+          width: '80px',
         },
         items: [
           // {
@@ -358,63 +196,63 @@ const config = {
       //     alt: 'Chat2DB',
       //     height: '36px',
       //   },
-        // links: [
-        //   {
-        //     title: 'Product',
-        //     items: [
-        //       {
-        //         label: 'Demo',
-        //         href: 'https://app.dyte.io',
-        //       },
-        //       {
-        //         label: 'Developer Portal',
-        //         href: 'https://dev.dyte.io',
-        //       },
-        //       {
-        //         label: 'Pricing',
-        //         href: 'https://dyte.io/#pricing',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Company',
-        //     items: [
-        //       {
-        //         label: 'About Us',
-        //         href: 'https://dyte.io',
-        //       },
-        //       {
-        //         label: 'Join Us',
-        //         href: 'https://dyte.freshteam.com/jobs',
-        //       },
-        //       {
-        //         label: 'Privacy Policy',
-        //         href: 'https://dyte.io/privacy-policy',
-        //       },
-        //       {
-        //         label: 'Contact Us',
-        //         href: 'https://dyte.io/contact',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Resources',
-        //     items: [
-        //       {
-        //         label: 'Documentation',
-        //         href: '/',
-        //       },
-        //       {
-        //         label: 'Blog',
-        //         href: 'https://dyte.io/blog',
-        //       },
-        //       {
-        //         label: 'Community',
-        //         href: 'https://community.dyte.io',
-        //       },
-        //     ],
-        //   },
-        // ],
+      // links: [
+      //   {
+      //     title: 'Product',
+      //     items: [
+      //       {
+      //         label: 'Demo',
+      //         href: 'https://app.dyte.io',
+      //       },
+      //       {
+      //         label: 'Developer Portal',
+      //         href: 'https://dev.dyte.io',
+      //       },
+      //       {
+      //         label: 'Pricing',
+      //         href: 'https://dyte.io/#pricing',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Company',
+      //     items: [
+      //       {
+      //         label: 'About Us',
+      //         href: 'https://dyte.io',
+      //       },
+      //       {
+      //         label: 'Join Us',
+      //         href: 'https://dyte.freshteam.com/jobs',
+      //       },
+      //       {
+      //         label: 'Privacy Policy',
+      //         href: 'https://dyte.io/privacy-policy',
+      //       },
+      //       {
+      //         label: 'Contact Us',
+      //         href: 'https://dyte.io/contact',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Resources',
+      //     items: [
+      //       {
+      //         label: 'Documentation',
+      //         href: '/',
+      //       },
+      //       {
+      //         label: 'Blog',
+      //         href: 'https://dyte.io/blog',
+      //       },
+      //       {
+      //         label: 'Community',
+      //         href: 'https://community.dyte.io',
+      //       },
+      //     ],
+      //   },
+      // ],
       //   copyright: 'Copyright © Chat2DB since 2023. All rights reserved.',
       // },
       prism: {

@@ -311,7 +311,7 @@ const config = {
           // },
           {
             label: '首页',
-            href: '',
+            href: '/',
           },
           {
             label: '文档',

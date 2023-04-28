@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "^2.4.0",
+    "docusaurus-plugin-includes": "^1.1.4",
     "@docusaurus/module-type-aliases": "^2.4.0",
     "@docusaurus/preset-classic": "^2.4.0",
     "@docusaurus/remark-plugin-npm2yarn": "^2.4.0",

@@ -1,90 +1,26 @@
-const code_themes = {
-  light: require('prism-react-renderer/themes/github'),
-  dark: require('prism-react-renderer/themes/vsDark'),
-};
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
+
+const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
+const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
+
+const plugins = [tailwindPlugin, webpackPlugin];
 
 /** @type {import('@docusaurus/types').Config} */
-const meta = {
+const config = {
   title: 'Chat2DB',
   tagline: '一款由阿里巴巴开源免费的多数据库客户端工具🚀',
-  url: 'https://chat2db.cn/',
+  favicon: 'favicon.ico',
+  url: 'https://chat2db.opensource.alibaba.com',
   baseUrl: '/',
-  favicon: '/logo/logo.',
+  organizationName: 'alibaba',
+  projectName: 'chat2db',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-};
-
-/** @type {import('@docusaurus/plugin-content-docs').Options[]} */
-const docs = [
-  {
-    id: 'cli',
-    path: 'docs/cli',
-    routeBasePath: '/cli',
-  },
-  {
-    id: 'plugin-sdk',
-    path: 'docs/plugin-sdk',
-    routeBasePath: '/plugin-sdk',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-];
-
-/** @type {import('@docusaurus/plugin-content-docs').Options} */
-const defaultSettings = {
-  breadcrumbs: false,
-  editUrl: 'https://github.com/dyte-in/docs/tree/main/',
-  showLastUpdateTime: true,
-  remarkPlugins: [
-    [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-  ],
-  sidebarPath: require.resolve('./sidebars-default.js'),
-};
-
-/**
- * Create a section
- * @param {import('@docusaurus/plugin-content-docs').Options} options
- */
-function create_doc_plugin({
-  sidebarPath = require.resolve('./sidebars-default.js'),
-  ...options
-}) {
-  return [
-    '@docusaurus/plugin-content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    ({
-      ...defaultSettings,
-      sidebarPath,
-      ...options,
-    }),
-  ];
-}
-
-const isDev = process.env.NODE_ENV === 'development';
-
-const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
-const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
-const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
-
-const plugins = [tailwindPlugin, ...docs_plugins, webpackPlugin];
-
-const fs = require('fs');
-const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
-const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  ...meta,
-  plugins,
-
-  trailingSlash: false,
-  themes: ['@docusaurus/theme-live-codeblock'],
-  clientModules: [require.resolve('./src/client/define-ui-kit.js')],
 
   presets: [
     [
@@ -92,87 +28,87 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs/guides',
-          id: 'guides',
-          routeBasePath: '/guides',
-          ...defaultSettings,
+          sidebarPath: require.resolve('./sidebars-default.js'),
+          editUrl: 'https://github.com/dyte-in/docs/tree/main/',
+          breadcrumbs: false,
         },
-        blog: false,
         theme: {
-          customCss: [
-            require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/api-reference.css'),
-          ],
-        },
-        sitemap: {
-          ignorePatterns: ['/tags/**'],
-        },
-        googleTagManager: {
-          containerId: 'GTM-5FDFFSS',
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       }),
     ],
   ],
 
+  plugins: [
+    // 接入开源官网的流量统计
+    [
+      'docusaurus-plugin-includes',
+      {
+        injectedHtmlTags: {
+          headTags: [
+            {
+              tagName: 'meta',
+              attributes: {
+                name: 'aes-config',
+                content:
+                  'pid=xux-opensource&user_type=101&uid=&username=&dim10=Chat2DB',
+              },
+            },
+          ],
+          preBodyTags: [
+            {
+              tagName: 'script',
+              attributes: {
+                src: '//g.alicdn.com/alilog/mlog/aplus_v2.js',
+                id: 'beacon-aplus',
+                exparams: 'clog=o&aplus&sidx=aplusSidx&ckx=aplusCkx',
+                async: true,
+              },
+            },
+            {
+              tagName: 'script',
+              attributes: {
+                src: '//g.alicdn.com/aes/??tracker/1.0.34/index.js,tracker-plugin-pv/2.4.5/index.js,tracker-plugin-event/1.2.5/index.js,tracker-plugin-jserror/1.0.13/index.js,tracker-plugin-api/1.1.14/index.js,tracker-plugin-perf/1.1.8/index.js,tracker-plugin-eventTiming/1.0.4/index.js',
+                async: true,
+              },
+            },
+          ],
+        },
+      },
+    ],
+    ...plugins,
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: '/img/dyte-docs-card.png',
-      colorMode: {
-        defaultMode: 'dark',
-      },
-      docs: {
-        sidebar: {
-          hideable: true,
-        },
-      },
+      image: '/logo/logo.light.svg',
       navbar: {
-        logo: {
-          href: '/',
-          src: '/logo/logo.light.svg',
-          srcDark: '/logo/logo.dark.svg',
-          alt: 'Chat2DB',
-          width: '80px',
-        },
+        title: 'Chat2DB',
         items: [
-          // {
-          //   label: '客户端',
-          //   type: 'dropdown',
-          //   className: 'dyte-dropdown',
-          //   items: [
-          //     {
-          //       type: 'html',
-          //       value: sdksHTML,
-          //       className: 'dyte-dropdown',
-          //     },
-          //   ],
-          // },
           {
             label: '首页',
             href: '/',
           },
           {
+            type: 'doc',
+            docId: 'guides/quickstart',
             label: '文档',
-            href: 'guides/quickstart.html',
             position: 'left',
             className: 'new-badge',
           },
-          {
-            label: 'API Reference',
-            to: '/api/',
-          },
-          {
-            label: '资料',
-            type: 'dropdown',
-            className: 'dyte-dropdown resources-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: resourcesHTML,
-                className: 'dyte-dropdown',
-              },
-            ],
-          },
+          // {
+          //   label: '资料',
+          //   type: 'dropdown',
+          //   className: 'dyte-dropdown resources-dropdown',
+          //   items: [
+          //     {
+          //       type: 'html',
+          //       value: resourcesHTML,
+          //       className: 'dyte-dropdown',
+          //     },
+          //   ],
+          // },
           {
             label: 'Try',
             to: 'http://test.sqlgpt.cn',
@@ -183,9 +119,18 @@ const config = {
           },
         ],
       },
+      colorMode: {
+        defaultMode: 'dark',
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+
       prism: {
-        theme: code_themes.light,
-        darkTheme: code_themes.dark,
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
         additionalLanguages: [
           'dart',
           'ruby',
@@ -206,6 +151,23 @@ const config = {
             line: 'highlight-next-line-error',
           },
         ],
+      },
+      metadata: [
+        {
+          name: 'keywords',
+          content:
+            'chat2DB, chat2db, chat2db开源, chat2db开源版, chat2db开源版本, chat2db开源项目, chat2db开源代码, chat2db开源文档, chat2db开源教程, chat2db开源安装, chat2db开源下载, chat2db开源安装教程, chat2db开源安装文档, chat2db开源安装手册, chat2db开源安装指南, chat2db开源安装说明, chat2db开源安装帮助, chat2db开源安装步骤, chat2db开源安装配置, chat2db开源安装环境, chat2db开源安装要求',
+        },
+        {
+          name: 'description',
+          content: 'Chat2DB开源版文档',
+        },
+      ],
+      // 最上面的广告位  https://docusaurus.io/docs/api/themes/configuration#announcement-bar
+      announcementBar: {
+        id: 'announcementBar-2',
+        content:
+          '⭐ 开源不易，如果觉得本项目对您的工作还是有帮助的话， 请帮忙在<a target="_blank" rel="noopener noreferrer" href="https://github.com/alibaba/Chat2DB">GitHub</a> 点个⭐️Star',
       },
     }),
 

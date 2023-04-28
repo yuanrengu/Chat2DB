@@ -6,5 +6,5 @@ Chat2DB包含一系列基于ChatGPT的AI SQL使用功能，主要包括自然语
 帮助用户理解复杂的SQL；可以针对慢SQL提供全方位的优化建议，提升查询效率；可以转换不同数据库类型的SQL语言，
 降低数据库迁移难度等等。
 
-  - 配置方式参考 [AI SQL Setup](https://github.com/alibaba/Chat2DB/blob/main/CHAT2DB_AI_SQL.md#%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE)
-  - 使用方式参考 [AI SQL Demo](https://github.com/alibaba/Chat2DB/blob/main/CHAT2DB_AI_SQL.md#%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E8%BD%ACsql)
+- 配置方式参考 [AI SQL Setup](https://github.com/alibaba/Chat2DB/blob/main/CHAT2DB_AI_SQL.md#%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE)
+- 使用方式参考 [AI SQL Demo](https://github.com/alibaba/Chat2DB/blob/main/CHAT2DB_AI_SQL.md#%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E8%BD%ACsql)

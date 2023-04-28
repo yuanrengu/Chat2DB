@@ -6,6 +6,9 @@ const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 
 const plugins = [tailwindPlugin, webpackPlugin];
 
+const fs = require('fs');
+const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Chat2DB',
@@ -97,18 +100,18 @@ const config = {
             position: 'left',
             className: 'new-badge',
           },
-          // {
-          //   label: '资料',
-          //   type: 'dropdown',
-          //   className: 'dyte-dropdown resources-dropdown',
-          //   items: [
-          //     {
-          //       type: 'html',
-          //       value: resourcesHTML,
-          //       className: 'dyte-dropdown',
-          //     },
-          //   ],
-          // },
+          {
+            label: '资料',
+            type: 'dropdown',
+            className: 'dyte-dropdown resources-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: resourcesHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
+          },
           {
             label: 'Try',
             to: 'http://test.sqlgpt.cn',

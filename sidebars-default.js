@@ -26,7 +26,7 @@ const sidebars = {
       // 展示的名称
       label: '快速开始',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {
@@ -43,7 +43,7 @@ const sidebars = {
       // 展示的名称
       label: '设计思考',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {
@@ -60,7 +60,7 @@ const sidebars = {
       // 展示的名称
       label: '技术架构',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {
@@ -77,7 +77,7 @@ const sidebars = {
       // 展示的名称
       label: 'SQL智能助手',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {
@@ -94,7 +94,7 @@ const sidebars = {
       // 展示的名称
       label: '支持的数据库',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {
@@ -111,7 +111,7 @@ const sidebars = {
       // 展示的名称
       label: '数据库管理',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {
@@ -128,7 +128,7 @@ const sidebars = {
       // 展示的名称
       label: '未来规划',
       // 默认打开
-      collapsed: true,
+      collapsed: false,
       // 配置去扫描指定根目录
       items: [
         {

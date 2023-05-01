@@ -1,9 +1,9 @@
 ---
-title: 'Chat2DB AI助手介绍'
+title: '自然语言生成SQL'
 sidebar_position: 11
 description: Chat2DB一个集成了AI能力的、支持Mysql、Oracle等多种数据库管理的数据库客户端工具
 ---
-# AI功能介绍
+
 ## 功能一：自然语言生成SQL
 首先建好测试需要用的表，这里用到了4张表做测试。大家也可以建自己的表做测试。
 ```sql
@@ -94,62 +94,3 @@ String schemaProperty = CollectionUtils.isNotEmpty(tableSchemas) ? String.format
     properties, prompt) : String.format("### 请根据以下SQL input%s. %s\n#\n### SQL input: %s",
                                         pType.getDescription(), ext, prompt);
 ```
-## 功能二：SQL解释为自然语言
-有的时候我们会遇到非常复杂的SQL，有的甚至成百上千行的SQL，要读懂这段SQL可能需要几个小时甚至几天时间。我们通过Chat2DB也可以快速的了解这段SQL的含义：
-
-```sql
-## ---BEGIN---
-## SELECT score.score 
-FROM score 
-INNER JOIN student_course ON score.course_id = student_course.course_id 
-INNER JOIN student ON student_course.student_id = student.id 
-WHERE student.name = '小明'
-## ---解释SQL:---
-这个SQL查询语句的作用是从“score”表中选择“score”列，同时使用“INNER JOIN”将“score”表与“student_course”表和“student”表连接起来。连接的条件是“score”表中的“course_id”列等于“student_course”表中的“course_id”列，“student_course”表中的“student_id”列等于“student”表中的“id”列。最后，使用“WHERE”子句筛选出“student”表中“name”列为“小明”的记录。这个查询语句的目的是找到学生“小明”在所有课程中的成绩。
-## --- END ---
-```
-## 功能三：SQL优化
-有的时候我们写了一段SQL性能不好，Chat2DB也可以帮我们优化SQL，提升查询性能。
-```sql
-## ---BEGIN---
-## SELECT score.score 
-FROM score 
-INNER JOIN student_course ON score.course_id = student_course.course_id 
-INNER JOIN student ON student_course.student_id = student.id 
-WHERE student.name = '小明'
-## ---SQL优化:---
-优化建议：
-
-1. 索引优化：为student表的name字段创建索引，可以加快WHERE条件的查询速度。
-
-2. JOIN优化：可以使用子查询或者临时表的方式，将student表中name为小明的记录先筛选出来，再进行JOIN操作，可以减少JOIN操作的数据量，提高查询效率。
-
-3. 数据库设计优化：可以考虑将student表和student_course表合并为一张表，避免JOIN操作，提高查询效率。
-
-4. 缓存优化：可以将查询结果缓存起来，避免重复查询，提高查询效率。
-## --- END ---
-```
-## 功能四：SQL转换
-不同数据库SQL预发间有略微的差异，我们也可以通过Chat2DB让他帮我们去转换这个SQL的语法。
-比如将如下的分页从Mysql语法转换成Oracel的语法。
-```sql
-## ---BEGIN---
-## SELECT s.name, SUM(sc.score) AS total_score
-FROM student s
-INNER JOIN student_course sc ON s.id = sc.student_id
-GROUP BY s.id
-ORDER BY total_score DESC
-LIMIT 10;
-## ---SQL转换:---
-SQL转换:
-
-SELECT s.name, SUM(sc.score) AS total_score
-FROM student s
-INNER JOIN student_course sc ON s.id = sc.student_id
-GROUP BY s.id, s.name
-ORDER BY total_score DESC
-FETCH FIRST 10 ROWS ONLY;
-## --- END ---
-```
-## AI功能演示
-...待补充

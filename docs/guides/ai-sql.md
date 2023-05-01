@@ -1,6 +1,6 @@
 ---
-title: 'AI SQL'
-sidebar_position: 4
+title: '智能SQL'
+sidebar_position: 5
 ---
 # AI SQL
 

@@ -18,7 +18,7 @@ const sidebars = {
   // 在导航栏的文档
   docSidebar: [
     // 这里代表 第一个需要引入： docs/index.md 这个页面
-    // 'index',
+    'index',
     // 这里代表 接下来的我们要去扫描指定目录
     {
       // 类型默认 category

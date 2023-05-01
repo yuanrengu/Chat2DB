@@ -21,3 +21,9 @@ yarn-debug.log*
 yarn-error.log*
 
 *.lock
+/.idea/.gitignore
+/.idea/Chat2DB-DOCS.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml

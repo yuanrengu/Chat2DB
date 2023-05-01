@@ -1,6 +1,6 @@
 ---
 title: '快速开始'
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # 快速开始

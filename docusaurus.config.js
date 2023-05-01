@@ -12,7 +12,7 @@ const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Chat2DB',
-  tagline: '一款由阿里巴巴开源免费的多数据库客户端工具🚀',
+  tagline: '一款开源免费的支持Mysql、Oracle、PostgreSQL等数据库的客户端工具🚀',
   favicon: 'favicon.ico',
   url: 'https://chat2db.opensource.alibaba.com',
   baseUrl: '/',

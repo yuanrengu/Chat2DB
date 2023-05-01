@@ -14,99 +14,34 @@ description: Chat2DB一个集成了AI能力的、支持Mysql、Oracle等多种�
 - 🛡 前端使用 Electron 开发，提供 Windows、Mac、Linux 客户端、网页版本一体化的解决方案
 - 🎁 支持环境隔离、线上、日常数据权限分离
 
-## ⏬ 下载安装
-| 描述                   | 下载地址                                                                                                                                                                                                                                       |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows               | [https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB%20Setup%201.0.0.exe](https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB%20Setup%201.0.0.exe) |
-| MacOS ARM64 (Apple芯片) | [https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0-arm64.dmg](https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0-arm64.dmg) |
-| MacOS X64 (Intel芯片)   | [https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0.dmg](https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0.dmg) |       
-| Jar包                  | [https://oss-chat2db.alibaba.com/release/1.0.0/ali-dbhub-server-start.jar](https://oss-chat2db.alibaba.com/release/1.0.0/ali-dbhub-server-start.jar) |                                                                                                                
+## 演示 
 
-## 🌰 使用Demo
-- 创建数据源
-  <a><img src="https://gw.alicdn.com/imgextra/i3/O1CN01PlpLYy1hIq5aMugpg_!!6000000004255-0-tps-3446-1750.jpg" width="100%"/></a>
-- 数据源管理
-  <a><img src="https://gw.alicdn.com/imgextra/i2/O1CN01DpzZJL1T7w2Xv9VMl_!!6000000002336-0-tps-3410-1662.jpg" width="100%"/></a>
-- SQL控制台
-  <a><img src="https://gw.alicdn.com/imgextra/i2/O1CN01aidnkx1Oo0LJ1Pdty_!!6000000001751-0-tps-3440-1736.jpg" width="100%"/></a>
-- AI智能助手
-  <a><img src="https://gw.alicdn.com/imgextra/i4/O1CN01iaSXot1W6VeaDFbK2_!!6000000002739-0-tps-3430-1740.jpg" width="100%"/></a>
+<video width="80%"  controls>
+  <source src="https://chat2db.oss-cn-zhangjiakou.aliyuncs.com/static/demo%E4%BE%8B%E5%AD%90.mov?OSSAccessKeyId=LTAI5tMHgGsZrXJ6WkiYuXFN&Expires=1682952781&Signature=Ei4JhGQlCwJQCKpQoY%2B46AeVosM%3D" type="video/mov">
+  Your browser does not support the video tag.
+</video>
 
+## 📑 Github地址
 
-## 📦 Docker部署
+* <a href="https://github.com/alibaba/Chat2DB/wiki">WIKI</a>
+* <a href="https://github.com/alibaba/Chat2DB/issues">Issue tracker</a>
 
-```bash
-  docker pull chat2db/chat2db:latest
-```
-## 🎯 运行环境
-注意：
-如果需要本地调试
-- java运行 <a href="https://adoptopenjdk.net/" target="_blank">Open JDK 17</a>
-- Node运行环境Node16 <a href="https://nodejs.org/" target="_blank">Node.js</a>.
-## 💻 本地调试
-- git clone到本地
-```bash
-$ git clone git@github.com:alibaba/Chat2DB.git
-```
-- 前端安装
-```bash
-$ cd Chat2DB/ali-dbhub-client
-$ npm install # 安装npm 
-$ npm run build:prod # 把js打包生成到后端的source目录
-```
-- 后端调试
-```bash
-$ cd ../ali-dbhub-server
-$ mvn clean install # 需要安装maven 3.8以上版本
-$ cd ali-dbhub-server/ali-dbhub-server-start/target/
-$ java -jar -Dchatgpt.apiKey=xxxxx ali-dbhub-server-start.jar  # 启动应用 chatgpt.apiKey 需要输入ChatGPT的key,如果不输入无法使用AIGC功能
-$ # 打开 http://localhost:7001 开启调试
-```
-
-- 前端调试
-```bash
-$ cd Chat2DB/ali-dbhub-client
-$ npm install 
-$ npm run start
-$ # 打开 http://localhost:8001 开启前端调试
-```
-但是前端调试需要映射下资源，可以下载[XSwitch](https://chrome.google.com/webstore/detail/idkjhjggpffolpidfkikidcokdkdaogg),添加以下配置文件
-``` json
-{
-  "proxy": [
-    [
-      "http://127.0.0.1:7001/static/front/(.*)",
-      "http://127.0.0.1:8001/$1",
-    ],
-    [
-      "http://127.0.0.1:7001/(.*).js$",
-      "http://127.0.0.1:8001/$1.js",
-    ],
-    [
-      "http://127.0.0.1:7001/(.*).css$",
-      "http://127.0.0.1:8001/$1.css",
-    ]
-  ],
-}
-```
-
-
-
-## 📑 文档
-
-* <a href="https://github.com/alibaba/ali-dbhub/wiki">WIKI</a>
-* <a href="https://github.com/alibaba/ali-dbhub/issues">Issue tracker</a>
+## 🔌 支持的数据库
+* Mysql
+* PostgreSQL
+* Oracle
+* SQLServer
+* ClickHouse
+* Oceanbase
+* H2
+* SQLite
+* 更多数据库支持中...
 
 ## ☎️ 联系我们
 <a><img src="https://gw.alicdn.com/imgextra/i1/O1CN01VBaYST1MFzhUY9QP6_!!6000000001406-0-tps-723-731.jpg" width="40%"/></a>
 
 微信：yxccw132  钉钉：9135032392
 
-## ❤️ 致谢
-感谢所有为Chat2DB贡献力量的同学们~
 
-<a href="https://github.com/alibaba/ali-dbhub/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=alibaba/ali-dbhub" />
-</a>
 
 

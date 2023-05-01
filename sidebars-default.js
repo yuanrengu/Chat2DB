@@ -24,7 +24,7 @@ const sidebars = {
       // 类型默认 category
       type: 'category',
       // 展示的名称
-      label: '开始',
+      label: '快速开始',
       // 默认打开
       collapsed: true,
       // 配置去扫描指定根目录

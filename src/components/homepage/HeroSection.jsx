@@ -29,7 +29,7 @@ export default function HeroSection() {
               快速接入
             </Link>
             <Link
-              href="/docs/guides/quickstart"
+              href="/docs"
               className="rounded-sm border border-solid border-primary bg-primary/10 px-12 py-2.5 text-center font-semibold text-primary hover:text-primary dark:border-primary-100 dark:text-primary-100"
             >
               开始了解

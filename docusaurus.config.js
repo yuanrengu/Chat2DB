@@ -102,7 +102,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'guides/download',
+            docId: '/',
             label: '文档',
             position: 'left',
             className: 'new-badge',

@@ -102,7 +102,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'guides/quickstart',
+            docId: 'guides/download',
             label: '文档',
             position: 'left',
             className: 'new-badge',
@@ -120,7 +120,7 @@ const config = {
             ],
           },
           {
-            label: 'Try',
+            label: '体验',
             to: 'http://test.sqlgpt.cn',
           },
           {

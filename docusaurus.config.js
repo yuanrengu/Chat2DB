@@ -32,7 +32,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-default.js'),
-          editUrl: 'https://github.com/dyte-in/docs/tree/main/',
+          editUrl: 'https://github.com/alibaba-open-source-website/Chat2DB/tree/main/',
           breadcrumbs: false,
         },
         theme: {

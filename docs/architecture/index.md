@@ -40,4 +40,4 @@ description: Chat2DB一个集成了AI能力的、支持Mysql、Oracle等多种�
 支持
 ## 客户端连接公用服务
 默认连接的是自己本地，如果团队有公用服务可以配置公用服务的ip和端口
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/5887/1682685205462-301d90c1-da69-4231-a388-ff53c01c7e6f.png#clientId=u13bd2303-c992-4&from=paste&height=465&id=u4fb19fcd&originHeight=929&originWidth=1500&originalType=binary&ratio=2&rotation=0&showTitle=false&size=250232&status=done&style=none&taskId=u02a37d3a-783d-4e95-9e25-972c39a1433&title=&width=750)
+![image.png](https://img.alicdn.com/imgextra/i2/O1CN01bKhBRs1cxzbTcdHFe_!!6000000003668-2-tps-2272-1390.png)

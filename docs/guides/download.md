@@ -7,7 +7,7 @@ description: Chat2DB一个集成了AI能力的、支持Mysql、Oracle等多种�
 ## ⏬ 下载安装
 | 描述                   | 下载地址                                                                                                                                                                                                                                       |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows               | [https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB%20Setup%201.0.0.exe](https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB%20Setup%201.0.0.exe) |
-| MacOS ARM64 (Apple芯片) | [https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0-arm64.dmg](https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0-arm64.dmg) |
-| MacOS X64 (Intel芯片)   | [https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0.dmg](https://oss-chat2db.alibaba.com/release/1.0.0/Chat2DB-1.0.0.dmg) |       
-| Jar包                  | [https://oss-chat2db.alibaba.com/release/1.0.0/ali-dbhub-server-start.jar](https://oss-chat2db.alibaba.com/release/1.0.0/ali-dbhub-server-start.jar) |                                                                                                                
+| Windows               | [https://oss-chat2db.alibaba.com/release/1.0.1/Chat2DB%20Setup%201.0.1.exe](https://oss-chat2db.alibaba.com/release/1.0.1/Chat2DB%20Setup%201.0.1.exe) |
+| MacOS ARM64 (Apple芯片) | [https://oss-chat2db.alibaba.com/release/1.0.1/Chat2DB-1.0.1-arm64.dmg](https://oss-chat2db.alibaba.com/release/1.0.1/Chat2DB-1.0.1-arm64.dmg) |
+| MacOS X64 (Intel芯片)   | [https://oss-chat2db.alibaba.com/release/1.0.1/Chat2DB-1.0.1.dmg](https://oss-chat2db.alibaba.com/release/1.0.1/Chat2DB-1.0.1.dmg) |       
+| Jar包                  | [https://oss-chat2db.alibaba.com/release/1.0.1/ali-dbhub-server-start.jar](https://oss-chat2db.alibaba.com/release/1.0.1/ali-dbhub-server-start.jar) |                                                                                                                
